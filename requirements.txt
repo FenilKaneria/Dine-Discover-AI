@@ -1,0 +1,7 @@
+gradio
+fastmcp
+langchain-openai
+langchain-core
+openai
+mcp
+pydantic
