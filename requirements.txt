@@ -1,7 +1,12 @@
-gradio
-fastmcp
-langchain-openai
-langchain-core
-openai
-mcp
-pydantic
+gradio>=4.44
+mcp>=1.9
+langchain-openai>=0.2
+langchain-core>=0.3
+openai>=1.40
+pydantic>=2
+python-dotenv>=1.0
+
+# Optional: the standalone FastMCP package. src/server.py uses it when installed
+# and otherwise falls back to the FastMCP copy bundled inside the `mcp` SDK,
+# so the project runs either way.
+# fastmcp

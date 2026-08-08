@@ -1,2 +1,12 @@
 .env
 data/raw/synthetic_recipe_images.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local artifacts
+*.bak
+structured_restaurant_data_unit_test.json*
