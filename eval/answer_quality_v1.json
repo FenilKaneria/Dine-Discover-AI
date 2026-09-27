@@ -1,0 +1,447 @@
+{
+  "summary": {
+    "n_queries": 30,
+    "n_in_corpus": 20,
+    "n_out_of_corpus": 10,
+    "generator": "openai/gpt-oss-120b",
+    "judge": "openai/gpt-oss-120b",
+    "faithfulness_mean": 4.53,
+    "fully_faithful_rate": 0.567,
+    "answer_relevance_mean_in_corpus": 5,
+    "ooc_decline_rate": 0.9,
+    "false_decline_rate_in_corpus": 0.05,
+    "answers_with_unsupported_claims": 13,
+    "answers_with_hallucinated_names": 0,
+    "citation_validity": 1.0,
+    "cited_answers_in_corpus": 1.0
+  },
+  "rows": [
+    {
+      "set": "A",
+      "query": "somewhere for a comforting bowl of ramen",
+      "answer": "Here are a few spots that serve comforting bowls of ramen, each with its own vibe and price point:\n\n**Miso Hungry – Sawtelle**【2】  \n- **Why it’s comforting:** An 18‑hour‑simmered tonkotsu broth that’s thick enough to coat a spoon, delivering that deep, melt‑in‑your‑mouth richness you crave.  \n- **Vibe & price:** Quirky and cramped, steam‑filled space that feels like a hidden gem; $$.\n\n**Silver Lake Ramen Loft – Silver Lake**【1】  \n- **Why it’s comforting:** Their creamy spicy tuna ramen offers a silky, umami‑rich broth with a gentle heat that warms you up without overwhelming.  \n- **Vibe & price:** Minimalist, hip setting with bright plywood walls and window seats for people‑watching; $$$.\n\n**The Neon Noodle – Koreatown**【3】  \n- **Why it’s comforting:** A spicy black‑garlic tonkotsu that packs both heat and depth, perfect for a late‑night comfort fix.  \n- **Vibe & price:** High‑energy, industrial atmosphere with neon lights and heavy‑metal tunes; $$.\n\n**The Neon Noodle – Sacramento**【4】  \n- **Why it’s comforting:** Traditional tonkotsu broth paired with smoked brisket adds a smoky, hearty twist that feels especially soothing.  \n- **Vibe & price:** Funky, graffiti‑filled space with upbeat hip‑hop; $$$.\n\n**The Neon Noodle – Anaheim**【5】  \n- **Why it’s comforting:** Lemongrass pork‑belly ramen blends a fragrant broth with tender pork, offering a slightly different but still cozy experience.  \n- **Vibe & price:** Festive, pop‑art‑filled café near the resort district; $$$$.\n\n**Quick guide to choosing:**  \n- **Classic, ultra‑rich tonkotsu:** Miso Hungry (Sawtelle) or The Neon Noodle (Koreatown).  \n- **Creamy, slightly spicy:** Silver Lake Ramen Loft (Silver Lake).  \n- **Smoky, fusion twist:** The Neon Noodle (Sacramento).  \n- **Bright, aromatic twist:** The Neon Noodle (Anaheim).  \n\nPick the one that matches the atmosphere you’re after, and you’ll have a comforting bowl of ramen waiting for you. Enjoy!",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [],
+      "reason": "All factual statements are supported by the retrieved context.",
+      "hallucinated_names": [],
+      "citations": 5,
+      "valid_citations": 5
+    },
+    {
+      "set": "A",
+      "query": "sushi or omakase night",
+      "answer": "Here are the top spots from the current data that fit a sushi‑or‑omakase night:\n\n**The Silent Pebble – Carmel‑by‑the‑Sea** [1]  \n- Type: Sushi bar / zen Japanese tea house  \n- Vibe: Zen, minimalist, ocean‑view décor; the silence is part of the service.  \n- Highlight: A hyper‑curated omakase experience that lets you focus on the texture of the fish and the sound of the tide.  \n- Rating: 4.9 / 5 (or 4.8 / 5 in a slightly different listing)  \n- Price: $$  \n\n**The Obsidian Room – Downtown LA** [2]  \n- Type: Experimental Japanese omakase bar  \n- Vibe: Dark‑chic, hushed, feels worlds away from the city streets.  \n- Highlight: Innovative dry‑aging fish program and avant‑garde sashimi.  \n- Rating: 4.9 / 5  \n- Price: $$$$  \n\n**The Neon Koi – Japantown (San Jose)** [3]  \n- Type: Sushi fusion spot  \n- Vibe: Loud, neon‑lit, cyber‑punk energy—popular with the Silicon Valley tech crowd.  \n- Highlight: Creative rolls and sake‑bombs for a high‑energy sushi night.  \n- Rating: 4.0 / 5  \n- Price: $$ (or $$$ in a second listing).  \n\n**How to choose**  \n- If you prefer a tranquil, ocean‑inspired omakase with meticulous attention to each bite, go with **The Silent Pebble**.  \n- If you’re looking for a high‑end, experimental omakase adventure in a city setting, **The Obsidian Room** is the match.  \n- If you want a lively, neon‑filled sushi night with inventive rolls and a buzzing atmosphere, **The Neon Koi** fits the bill.  ",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [],
+      "reason": "All statements are supported by the retrieved context and directly address the request.",
+      "hallucinated_names": [],
+      "citations": 3,
+      "valid_citations": 3
+    },
+    {
+      "set": "A",
+      "query": "dim sum with dumplings and bao",
+      "answer": "**The Golden Pagoda — Chinatown** [2]  \n- Classic dim‑sum parlor with a bustling, traditional vibe.  \n- Serves the classic shrimp **har gow** dumplings and **steamed pork buns** (a type of bao).  \n\n**Closest matches**  \n\n- **The Iron Lotus — Chinatown** [1] – A moody, contemporary dim‑sum house that excels at dumplings (e.g., truffle‑oil shrimp dumplings, wagyu potstickers) but does not highlight bao on its menu.  \n\n- **Velvet Dragon — historic center of Chinatown** [3] – A modern, social eatery offering innovative dumplings such as truffle‑infused siu mai and creative buns (charcoal custard buns), though it leans more toward culinary experimentation than traditional bao.  \n\nThe other listed spots (The Golden Gyoza [4] and Blue Bayou [5]) focus on Japanese gyoza or Cajun/Creole cuisine and don’t fit a dim‑sum dumpling + bao request.",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [],
+      "reason": "All factual statements are supported by the retrieved context and the answer directly addresses the request.",
+      "hallucinated_names": [],
+      "citations": 5,
+      "valid_citations": 5
+    },
+    {
+      "set": "A",
+      "query": "korean barbecue grilled at the table",
+      "answer": "**Seoul Soul – Koreatown** [1]  \n- A high‑energy, industrial‑style Korean BBQ hotspot where you grill premium wagyu cuts right at your table. The loud, rhythmic atmosphere makes it a perfect start to a night out in one of LA’s liveliest nightlife districts.  \n\n**Closest alternative:**  \n\n**Iron Griddle – Torrance** [2]  \n- While not Korean (it’s a Japanese BBQ house), Iron Griddle offers a similar interactive, tabletop‑grilling experience with an all‑you‑can‑eat format and industrial décor. If you’re open to Japanese‑style BBQ, this is a solid nearby option.  \n\nIf you’re specifically looking for Korean‑style tabletop grilling, **Seoul Soul** is the spot that matches your request directly.",
+      "faithfulness": 4,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [
+        "Seoul Soul – the claim that you grill premium wagyu cuts right at your table is not explicitly stated in the source."
+      ],
+      "reason": "All major facts are supported, but the phrasing about grilling 'right at your table' is an unsupported inference.",
+      "hallucinated_names": [],
+      "citations": 2,
+      "valid_citations": 2
+    },
+    {
+      "set": "A",
+      "query": "fully vegan plant-based dinner",
+      "answer": "Here are the fully vegan, plant‑based dinner spots that match your query:\n\n**1. Cactus Flower — Echo Park, hills** [1]  \n- **Vibe:** Boho‑chic, sun‑drenched space with hanging succulents and reclaimed‑wood tables.  \n- **Cuisine:** Plant‑based Mexican bistro.  \n- **Signature dishes:** Jackfruit carnitas, house‑made cashew crema.  \n- **Rating:** 4.2 / 5.  \n- **Price range:** $$$$ (higher‑end).  \n- **Notes:** The intimate seating can lead to waits during peak brunch, but it’s a relaxed spot perfect for a longer dinner with a Mexican flair.\n\n**2. The Velvet Orchard — Ojai** [2] (also listed as a $‑priced version in [3])  \n- **Vibe:** Dreamy, ethereal “hidden garden” with an outdoor setting that glows at sunset (“Pink Moment”).  \n- **Cuisine:** Fully plant‑based (vegan) dining room.  \n- **Signature dishes:** Walnut‑crusted “steaks,” lavender‑honey sorbet.  \n- **Rating:** 4.6 / 5.  \n- **Price range:** $$$$ (the primary listing) – there’s also a $ version noted, but the core experience is the upscale, sunset‑side dinner.  \n- **Notes:** Ideal if you want a romantic, nature‑immersed dinner with a spiritual, garden‑like atmosphere.\n\n**3. The Glass House — Culver City** [4]  \n- **Vibe:** Modern fine‑dining inside an architecturally striking glass cube that glows like a lantern at night.  \n- **Cuisine:** Plant‑based (vegan) fine‑dining.  \n- **Signature dishes:** “Scallops” made from king oyster mushrooms, beet‑based tartare.  \n- **Rating:** 4.5 / 5.  \n- **Price range:** $$$$.  \n- **Notes:** Perfect for a sleek, upscale dinner experience with inventive, high‑concept dishes.\n\n**4. Urban Harvest — Pasadena** [5]  \n- **Vibe:** Bright, minimalist deli‑style space geared toward quick, guilt‑free meals.  \n- **Cuisine:** Plant‑based (vegan) deli fare.  \n- **Signature dishes:** Smoked carrot “lox” bagels, cold‑pressed juices.  \n- **Rating:** 4.0 / 5.  \n- **Price range:** $ (budget‑friendly).  \n- **Notes:** Best for a casual, fast‑service dinner rather than a sit‑down meal.\n\n### Quick recommendation\nIf you’re looking for a **special dinner occasion**, **The Velvet Orchard — Ojai** offers the most atmospheric, romantic setting with a fully vegan menu and top ratings. For a **modern, high‑design experience**, try **The Glass House — Culver City**. If you prefer **Mexican flavors** in a relaxed vibe, **Cactus Flower — Echo Park** is the go‑to. And for a **budget‑friendly, quick bite**, **Urban Harvest — Pasadena** fits the bill.",
+      "faithfulness": 4,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [
+        "\"Modern fine‑dining\" vibe for The Glass House (vibe not mentioned in the source)",
+        "\"minimalist\" vibe for Urban Harvest (vibe not mentioned in the source)",
+        "Labeling The Velvet Orchard as \"vegan\" (the source only says plant‑based, not explicitly vegan)"
+      ],
+      "reason": "Most details match the retrieved context, but three descriptive labels (modern vibe, minimalist vibe, vegan label) are not directly supported.",
+      "hallucinated_names": [],
+      "citations": 5,
+      "valid_citations": 5
+    },
+    {
+      "set": "A",
+      "query": "wood-fired pizza",
+      "answer": "Here are the California spots that specialize in wood‑fired pizza:\n\n- **The Rustic Crust – Altadena** [1]  \n  A family‑friendly pizzeria known for its thin, blistered sourdough crusts and seasonal toppings (e.g., squash blossoms). The warm, wood‑scented dining room feels like a neighbor’s kitchen, and the price range is $$.\n\n- **Workshop Kitchen + Bar – Palm Springs** [2]  \n  An industrial, high‑concept New American restaurant housed in a converted 1920s theater. Alongside market‑driven small plates, it serves a standout wood‑fired pizza in a brutalist, concrete‑heavy space. This is a more upscale option at $$$$.\n\n- **Mosaic Restaurant – Redding** [3]  \n  A sleek Californian grill located by the Sundial Bridge. Its menu includes wood‑fired pizzas served in a sophisticated, glass‑walled environment with river views. Price range is $$.\n\n**How they differ**  \n- **Rustic Crust** focuses purely on pizza in a cozy, neighborhood‑kitchen vibe.  \n- **Workshop Kitchen + Bar** offers pizza as part of a broader, upscale New American menu in an industrial setting.  \n- **Mosaic Restaurant** pairs its pizza with a refined, riverside dining experience and a broader Californian grill menu.",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [],
+      "reason": "All statements are directly supported by the retrieved context and the answer addresses the request.",
+      "hallucinated_names": [],
+      "citations": 3,
+      "valid_citations": 3
+    },
+    {
+      "set": "A",
+      "query": "dry-aged steak dinner",
+      "answer": "**Iron & Embers – Arts District, DTLA** [1]  \n- **Type & vibe:** Fine‑dining American steakhouse in a moody, industrial setting with “masculine sophistication.”  \n- **Signature dry‑aged steak:** A 45‑day dry‑aged ribeye served with bone‑marrow chimichurri.  \n- **Rating & price:** 4.8 / 5, $$$$ (high‑end).  \n\n**Closest alternatives**\n\n- **The Redwood Room – Eureka** [2]  \n  - Offers a grass‑fed ribeye, but it isn’t listed as dry‑aged. The vibe is nostalgic, Victorian‑style fine dining and the price is much lower ($).  \n\n- **The Ivory Room – Beverly Hills** [3]  \n  - Serves classic prime rib (not dry‑aged) in an opulent, 1940s‑evoking environment; price range $$.\n\n- **Metropolis Grill – DTLA** [5]  \n  - Features a dry‑aged **burger**, not a steak, in a sleek, glass‑walled brasserie; price range $.\n\nIf you’re specifically after a dry‑aged steak dinner, **Iron & Embers** is the only restaurant in the current results that explicitly offers a dry‑aged ribeye steak. The other venues provide quality meat dishes but lack the dry‑aged steak focus you’re looking for.",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [],
+      "reason": "The answer is fully supported by the retrieved context and directly addresses the request.",
+      "hallucinated_names": [],
+      "citations": 4,
+      "valid_citations": 4
+    },
+    {
+      "set": "A",
+      "query": "fresh oysters on the half shell",
+      "answer": "Here are the closest options in the current data set, though none list “fresh oysters on the half‑shell” as a specific menu item:\n\n- **Salt & Sage — Newport Beach** [2]  \n  *Type:* Chic, nautical Californian lounge  \n  *What they offer:* Oysters (served in a stylish setting overlooking luxury yacht slips). The description notes “oysters” but does not specify that they are served fresh on the half shell.  \n\n- **The Golden Hook — Redondo Beach** [1]  \n  *Type:* Casual, sun‑bleached seafood market and grill  \n  *What they offer:* Grilled oysters. This is a cooked preparation rather than fresh, raw oysters on the half shell.  \n\nBoth spots serve oysters, but the preparation differs from the classic fresh half‑shell presentation you asked about. If you need a venue that explicitly advertises fresh half‑shell oysters, you may want to broaden the search or try a dedicated raw bar in the area.",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [],
+      "reason": "All factual statements are supported by the retrieved context and the response appropriately addresses the request.",
+      "hallucinated_names": [],
+      "citations": 2,
+      "valid_citations": 2
+    },
+    {
+      "set": "A",
+      "query": "casual taco joint",
+      "answer": "Here are the casual taco spots that match your request:\n\n**Mar de Cortez — Santa Monica** [1]  \n- **Type:** Casual taqueria  \n- **Vibe:** Sun‑drenched, salt‑air energy right near the pier  \n- **Signature tacos:** Beer‑battered snapper tacos, zesty octopus ceviche  \n- **Price:** $ (very affordable)  \n\n**Closest alternatives**\n\n- **Taco Nocturna — Whittier** [2] – A moody, artistic night‑market‑style stall that’s still casual, but its vibe leans more “gritty street‑food” than beach‑side relaxation.  \n- **Taco Cloud — Boyle Heights** [5] – A high‑concept fast‑food stand with ultra‑fluffy flour‑tortilla tacos; it’s casual and outdoor‑focused, though the price point is a bit higher ($$$) and the concept is more experimental.  \n\nIf you’re looking for a laid‑back, open‑air taco experience, **Mar de Cortez** is the best fit. The other two are also casual but differ in atmosphere and price. Let me know if you’d like more details or recommendations in a specific part of the city!",
+      "faithfulness": 4,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [
+        "Taco Nocturna is still casual",
+        "Taco Cloud has ultra‑fluffy flour‑tortilla tacos"
+      ],
+      "reason": "Most statements are supported by the retrieved context, but the claim that Taco Nocturna is casual and the description of Taco Cloud's tortillas as \"ultra‑fluffy\" are not directly backed by the source.",
+      "hallucinated_names": [],
+      "citations": 3,
+      "valid_citations": 3
+    },
+    {
+      "set": "A",
+      "query": "persian kebabs with saffron rice",
+      "answer": "**Saffron & Sage – North Brand Boulevard, Glendale** [3]  \n- **What you’ll get:** Succulent lamb koobideh kebabs served alongside fragrant, saffron‑infused rice.  \n- **Why it fits:** This upscale Persian spot is praised for exactly the combination you’re after—classic kebabs paired with beautifully scented saffron rice.  \n\n**Close alternatives**\n\n- **The Silk Road – Glendale** [2] – Offers saffron‑infused Koobideh kabobs, but the menu notes don’t mention saffron rice. If you’re happy with kebabs and can add a side of rice yourself, this opulent fine‑dining venue is a strong choice.  \n\n- **Saffron Sunset – Malibu** [1] – Serves traditional Persian kebabs (and grilled saffron chicken) in a relaxed, ocean‑view setting, but the description doesn’t list saffron rice. It’s a great option if you prioritize ambiance and a coastal vibe.  \n\n**Bottom line:** For the exact “Persian kebabs with saffron rice” you described, **Saffron & Sage on North Brand Boulevard in Glendale** is the best match. The Silk Road and Saffron Sunset are nearby options that excel at kebabs but lack the saffron‑rice component.",
+      "faithfulness": 4,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [
+        "served alongside fragrant, saffron‑infused rice"
+      ],
+      "reason": "All core facts are supported, but the claim that kebabs are served alongside saffron rice is inferred rather than explicitly stated in the source.",
+      "hallucinated_names": [],
+      "citations": 3,
+      "valid_citations": 3
+    },
+    {
+      "set": "A",
+      "query": "fiery spicy sichuan dishes",
+      "answer": "Here are the spots in the retrieved data that specialize in fiery, spicy Sichuan (or Szechuan) fare:\n\n- **Mala Market – Alhambra** [1]  \n  *Vibe*: Energetic, no‑nonsense, bright, fast‑paced.  \n  *Why it fits*: Known for hand‑pulled noodles drenched in a fiery chili‑oil “mala” (numbing) broth—the classic heat‑centered experience you’re after.  \n\n- **The Spice Alchemist – Alhambra** [2]  \n  *Vibe*: Calm, clean, modern aesthetic.  \n  *Why it fits*: A higher‑end Szechuan eatery that pushes traditional heat, highlighted by its signature “numbing peppercorn chicken.”  \n\n- **The Neon Noodle Bar – San Gabriel Valley** [3]  \n  *Vibe*: Cyber‑punk, funky, neon‑lit fast‑casual spot.  \n  *Why it fits*: Serves Sichuan street‑food staples such as numbing Dan Dan noodles and cumin‑spiced lamb skewers—both deliver bold, spicy heat.  \n\nAll three deliver the intense, numbing spice characteristic of Sichuan cuisine, but they differ in price and atmosphere: Mala Market is budget‑friendly and bustling; The Spice Alchemist is pricier with a sleek, calm setting; and The Neon Noodle Bar offers a youthful, neon‑glow environment at a modest price point.",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [],
+      "reason": "All factual statements are supported by the retrieved context and the answer directly addresses the request.",
+      "hallucinated_names": [],
+      "citations": 3,
+      "valid_citations": 3
+    },
+    {
+      "set": "A",
+      "query": "vietnamese pho or banh mi",
+      "answer": "**Pho Highland — Highland Park** [1]  \n- A bright, trendy Vietnamese noodle shop that serves a clean, aromatic beef pho (with vegan broth options).  \n\nThe other venues in the results are Vietnamese‑focused but their highlighted dishes are different (e.g., lemongrass branzino at The Emerald Garden, banquet‑style beef courses at The Blue Lotus, and French‑Vietnamese fusion at The Gilded Lily). None of them list pho or banh mi on their menus. If you’re specifically after pho or a classic banh mi, Pho Highland is the closest match in the current data.",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [],
+      "reason": "The answer is fully supported by the provided context and directly addresses the request.",
+      "hallucinated_names": [],
+      "citations": 1,
+      "valid_citations": 1
+    },
+    {
+      "set": "D",
+      "query": "giant crispy rice crepes, meat-free, in the Indian neighborhood of Artesia",
+      "answer": "There isn’t a restaurant in the retrieved list that exactly fits “giant, meat‑free, crispy‑rice crepes in the Indian neighborhood of Artesia.”  \n\n**Closest matches**\n\n| Restaurant | Location | Why it’s close | How it differs |\n|------------|----------|----------------|----------------|\n| **The Marigold Room** [1] | Little India (Artesia) | Vegetarian South Indian spot in the exact neighborhood you’re looking at. | Its signature dishes are paper‑thin, three‑foot‑long dosas and coconut chutneys—not rice‑based crepes. |\n| **The Saffron Loom** [4] | Tehrangeles (Westwood) | Known for **tahdig**, a famously crispy rice dish that could satisfy a “crispy‑rice” craving. | It’s a Persian tea house and grill, not Indian, and it’s located in Westwood, not Artesia. |\n| **The Blue Lotus** [2] | Westminster | Serves “crisp sizzling crepes,” which are the closest crepe‑style item in the set. | The crepes are part of a Vietnamese banquet hall menu, not vegetarian, and the venue is in Westminster, not Artesia. |\n\nIf you’re specifically after a meat‑free, giant, crispy‑rice crepe in Artesia, none of the current entries match that description. You might try expanding the search to nearby neighborhoods or consider a place like **The Marigold Room** for a vegetarian Indian experience, even though it serves dosas rather than rice crepes. Let me know if you’d like suggestions for other vegetarian Indian dishes in Artesia or if you’d like to explore nearby areas for the exact crepe you have in mind!",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": true,
+      "unsupported_claims": [],
+      "reason": "All factual statements are supported by the retrieved context, and the answer correctly indicates no exact match was found.",
+      "hallucinated_names": [],
+      "citations": 3,
+      "valid_citations": 3
+    },
+    {
+      "set": "D",
+      "query": "homestyle Oaxacan place in Boyle Heights famous for a super complex dark chile sauce",
+      "answer": "**Guerrero Kitchen — Boyle Heights** [1]  \n- **Type & vibe:** A homestyle, family‑run Oaxacan eatery that feels like a colorful extension of a family home.  \n- **Signature sauce:** Their famed **24‑ingredient mole negro** – a deep, dark chile sauce that’s praised for its complexity and depth of flavor.  \n- **Rating & price:** 4.8 / 5 stars, price range $ (very affordable).  \n\nGuerrero Kitchen perfectly fits your description of a homestyle Oaxacan spot in Boyle Heights known for a super‑complex dark chile sauce.",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [],
+      "reason": "Answer is fully supported by the provided context and directly addresses the query",
+      "hallucinated_names": [],
+      "citations": 1,
+      "valid_citations": 1
+    },
+    {
+      "set": "D",
+      "query": "quiet Taiwanese teahouse in San Gabriel with smoked fish and braised pork on rice",
+      "answer": "**The Silk Parasol — San Gabriel** [1]  \n- **Type:** Refined, quiet Taiwanese tea house  \n- **Signature dishes:** Oolong‑infused smoked fish and minced (braised) pork over rice  \n- **Vibe:** A meditative, wood‑paneled escape that lets you enjoy the flavors in peace  \n\nThis spot matches your description almost exactly: it’s a tranquil Taiwanese teahouse in San Gabriel and offers both smoked fish and pork served over rice. If you’re looking for anything else, let me know!",
+      "faithfulness": 4,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [
+        "The assistant describes the pork as \"braised\" (\"minced (braised) pork over rice\"), but the source lists it only as \"minced pork over rice\""
+      ],
+      "reason": "All facts match the source except the unsupported claim that the pork is braised.",
+      "hallucinated_names": [],
+      "citations": 1,
+      "valid_citations": 1
+    },
+    {
+      "set": "D",
+      "query": "birria noodle soup mashup and margaritas out in Temecula",
+      "answer": "**Iron & Agave – Temecula** [1]  \n- **Cuisine:** Mexican‑Fusion (sleek, industrial setting)  \n- **Signature mash‑up:** Short‑rib birria ramen – a hearty birria‑inspired noodle soup that blends rich Mexican flavors with classic ramen broth.  \n- **Margarita highlight:** Smoked pineapple margaritas, offering a sweet‑smoky twist that pairs perfectly with the birria ramen.  \n- **Rating:** 4.4 / 5  \n- **Price range:** $$  \n\nThis spot is the only restaurant in the retrieved results that serves a birria‑noodle‑soup mash‑up together with margaritas in Temecula. If you’re looking for a modern, high‑energy vibe with a Mexican‑fusion twist, Iron & Agave is the place to go.",
+      "faithfulness": 4,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [
+        "modern, high‑energy vibe"
+      ],
+      "reason": "The answer adds a claim about a high‑energy vibe that isn’t supported by the retrieved context.",
+      "hallucinated_names": [],
+      "citations": 1,
+      "valid_citations": 1
+    },
+    {
+      "set": "D",
+      "query": "fancy Persian dinner in Glendale with rugs and chandeliers, grilled ground meat skewers",
+      "answer": "**The Silk Road – Glendale** [1]  \n- **Vibe & décor:** An opulent, regal setting featuring intricate Persian carpets (rugs) and crystal chandeliers that create a truly “fancy” atmosphere.  \n- **Signature grilled skewers:** Saffron‑infused **Koobideh kabobs** (ground‑meat skewers) that are a highlight of the menu.  \n- **Rating & price:** 4.8 / 5 stars, $$ price range.  \n\n**Closest alternative:** **Saffron & Sage – North Brand Boulevard, Glendale** [2]  \n- Upscale Persian dining with elegant gold‑leaf décor and plush velvet seating.  \n- Serves succulent lamb Koobideh, but the space lacks the rug‑and‑chandelier ambience you described.  \n\nIf you’re looking for the exact combination of luxurious rugs, chandeliers, and grilled ground‑meat skewers, **The Silk Road** is the perfect match. Enjoy your dinner!",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [],
+      "reason": "All factual statements are directly supported by the retrieved context.",
+      "hallucinated_names": [],
+      "citations": 2,
+      "valid_citations": 2
+    },
+    {
+      "set": "D",
+      "query": "cheap tongue-numbing spicy noodle counter in Alhambra",
+      "answer": "**Mala Market — Alhambra** [1]  \n- **Type:** Szechuan noodle stall  \n- **Vibe:** Energetic, no‑nonsense, bright and fast‑paced  \n- **What you’ll get:** Hand‑pulled noodles drenched in fiery chili oil that delivers the classic “mala” (tongue‑numbing) sensation you’re after.  \n- **Price:** $ (budget‑friendly)  \n- **Rating:** 4.6 / 5  \n\n**Closest higher‑priced alternative**  \nIf you’re willing to spend a bit more for a more polished setting, **The Spice Alchemist — Alhambra** [2] also offers strong Szechuan heat (famous for its numbing peppercorn chicken) but its price range is $$$$, so it’s not the cheap option you asked for.",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [],
+      "reason": "All factual statements are supported by the retrieved context and the answer directly addresses the request.",
+      "hallucinated_names": [],
+      "citations": 2,
+      "valid_citations": 2
+    },
+    {
+      "set": "D",
+      "query": "little French pastry shop in Larchmont for tea and almond croissants",
+      "answer": "**Larchmont Lavender – Larchmont Village** [1]  \nA dainty French‑style bakery and tea room that’s perfect for a quiet tea break. It’s especially known for its **flaky almond croissants** (alongside lavender‑infused macarons) and offers a peaceful sidewalk‑seating vibe that feels like a quiet morning in a Parisian suburb.  \n\n**Closest alternative:**  \n**The Velvet Bean – Larchmont Village** [2] – a refined European‑style café with a peaceful sidewalk setting and lavender‑infused pastries, but it doesn’t specialize in almond croissants. If almond croissants are a must, Larchmont Lavender is the better fit.",
+      "faithfulness": 4,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [
+        "but it doesn’t specialize in almond croissants."
+      ],
+      "reason": "All main facts are supported except the statement about The Velvet Bean not specializing in almond croissants, which isn’t in the provided context.",
+      "hallucinated_names": [],
+      "citations": 2,
+      "valid_citations": 2
+    },
+    {
+      "set": "D",
+      "query": "hushed high-end chef's choice raw fish counter downtown, money no object",
+      "answer": "**The Obsidian Room — Downtown LA** [1]  \n- **Vibe & Setting:** A hushed, focused environment that feels worlds away from the city streets, perfect for a high‑end, private dining experience.  \n- **Chef’s Choice Raw‑Fish Counter:** Offers an experimental Japanese omakase bar with a standout dry‑aging fish program and innovative sashimi served directly from the counter.  \n- **Price Level:** $$$$ (money‑no‑object tier).  \n\nThis spot matches all of your criteria: a hushed atmosphere, downtown location, ultra‑luxurious chef‑curated raw‑fish offerings, and a price point that reflects no budget constraints.",
+      "faithfulness": 4,
+      "answer_relevance": 5,
+      "declined": false,
+      "unsupported_claims": [
+        "Chef’s Choice Raw‑Fish Counter",
+        "served directly from the counter"
+      ],
+      "reason": "Most statements are supported, but the claim of a chef's choice raw‑fish counter and serving directly from the counter are not in the retrieved context.",
+      "hallucinated_names": [],
+      "citations": 1,
+      "valid_citations": 1
+    },
+    {
+      "set": "OOC",
+      "query": "best sushi in Seattle",
+      "answer": "I’m sorry—I don’t have any sushi spots for Seattle in the information I’ve retrieved. The restaurants listed are all located in Carmel‑by‑the‑Sea, San Jose, and Westwood, which are quite a distance from Seattle.  \n\nIf you’d like, you can try a new search specifying “best sushi in Seattle” to pull up relevant local options.",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": true,
+      "unsupported_claims": [],
+      "reason": "The response accurately reflects the retrieved data, correctly notes no Seattle sushi options, and is fully relevant.",
+      "hallucinated_names": [],
+      "citations": 0,
+      "valid_citations": 0
+    },
+    {
+      "set": "OOC",
+      "query": "Chicago deep-dish pizza",
+      "answer": "The restaurants in the current results don’t serve Chicago‑style deep‑dish pizza. The closest matches are places that specialize in wood‑fired pies, but they focus on thin‑crust or artisanal styles rather than the thick, buttery crust typical of a deep‑dish.\n\n- **The Rustic Crust — Altadena** [1] – A family‑friendly wood‑fired pizzeria known for thin, blistered sourdough crusts and seasonal toppings. It’s a classic thin‑crust spot, not a deep‑dish venue.  \n- **Mosaic Restaurant — Redding** [5] – Offers wood‑fired pizzas in a sleek, glass‑walled setting. Again, the focus is on thin, crisp crusts rather than the hearty, layered deep‑dish format.  \n- **Workshop Kitchen + Bar — Palm Springs** [4] – Features wood‑fired pizza among its New American small plates. The pizza here is also thin‑crust and upscale, not the deep‑dish style.\n\nIf you’re specifically looking for authentic Chicago deep‑dish pizza in California, you may need to broaden the search or try a different query (e.g., “deep‑dish pizza Los Angeles” or “Chicago‑style pizza San Diego”). Let me know if you’d like me to look for those!",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": true,
+      "unsupported_claims": [],
+      "reason": "All factual statements about the listed restaurants are supported by the retrieved context, and the answer correctly indicates no deep‑dish options were found.",
+      "hallucinated_names": [],
+      "citations": 3,
+      "valid_citations": 3
+    },
+    {
+      "set": "OOC",
+      "query": "Ethiopian injera platter to share",
+      "answer": "I’m sorry—none of the restaurants in the current results serve an Ethiopian injera platter for sharing.\n\n**Closest matches in the list**\n\n| Restaurant | Location | Why it’s similar (and how it differs) |\n|------------|----------|---------------------------------------|\n| **The Marble Fountain** | Montebello | This spot is a bakery and grill known for hand‑stretched flatbreads (Lahmajune) that are served family‑style. However, the cuisine is Armenian, not Ethiopian, and the bread is a different style and flavor than injera. [3] |\n| **The Wild Fig** | Agoura Hills | A tranquil, upscale Middle Eastern dining room with a focus on dishes like lamb shank and pomegranate walnut stew. While it offers a communal dining vibe, the menu is Middle Eastern rather than Ethiopian and does not include injera. [1] |\n\nThe other two listings—**Indigo Palms** (Palm Springs) and **The Saffron Loom** (Westwood)—are focused on modern desert‑style fare and Persian tea‑house cuisine, respectively, and also do not feature Ethiopian dishes. [2][4]\n\n**What to do next**\n\nIf you’re specifically looking for an Ethiopian restaurant that offers a shareable injera platter, you might try a new search with “Ethiopian restaurant” or “injera platter” plus a city or neighborhood you’re interested in. That will pull up venues that specialize in Ethiopian cuisine.",
+      "faithfulness": 4,
+      "answer_relevance": 5,
+      "declined": true,
+      "unsupported_claims": [
+        "served family‑style",
+        "communal dining vibe"
+      ],
+      "reason": "Most statements are supported, but claims about family‑style service and communal vibe are not in the provided context.",
+      "hallucinated_names": [],
+      "citations": 4,
+      "valid_citations": 4
+    },
+    {
+      "set": "OOC",
+      "query": "Peruvian lomo saltado in Fresno",
+      "answer": "I’m sorry—none of the restaurants in the current results serve Peruvian lomo saltado, and none are located in Fresno.\n\n**Closest matches from the list**\n\n| Restaurant | Location | Cuisine | How it differs |\n|------------|----------|---------|----------------|\n| The Salted Lemon — Sherman Oaks | Sherman Oaks | Mediterranean | A bright, yellow‑accented café focused on lemon‑zest linguine and grilled halloumi salads—not Peruvian, and it’s a few hours north of Fresno. |\n| Guerrero Kitchen — Boyle Heights | Boyle Heights | Oaxacan (Mexican) | Known for a 24‑ingredient mole negro; completely different regional Mexican fare and located in East LA. |\n| Taco Tradición — East Los Angeles | East Los Angeles | Mexican | Famous for al pastor tacos; a bustling taqueria, not a Peruvian grill, and far from Fresno. |\n| Taco de Oro — Pacoima | Pacoima | Mexican | Offers crispy hard‑shell tacos and salsa roja; again, Mexican street food, not Peruvian, and situated in the San Fernando Valley. |\n| The Saffron Loom — Tehrangeles (Westwood) | Westwood | Persian | Elegant Persian tea house known for tahdig and cherry‑infused albaloo polo; a different culinary tradition and location. |\n\nBecause the current data set doesn’t include a Peruvian restaurant in Fresno, you might try a new search specifying “Peruvian lomo saltado Fresno” or broaden the query to “Peruvian restaurants in Central California.” That should surface options that match your craving more closely.",
+      "faithfulness": 4,
+      "answer_relevance": 5,
+      "declined": true,
+      "unsupported_claims": [
+        "it’s a few hours north of Fresno",
+        "far from Fresno",
+        "situated in the San Fernando Valley"
+      ],
+      "reason": "Most statements are supported, but three geographic distance claims are not present in the provided context.",
+      "hallucinated_names": [],
+      "citations": 0,
+      "valid_citations": 0
+    },
+    {
+      "set": "OOC",
+      "query": "halal cart chicken over rice",
+      "answer": "I’m sorry—none of the restaurants in the current results are a halal‑cart‑style spot that serves chicken over rice.\n\n**Closest matches in the list**\n\n| Restaurant | Location | Why it’s similar (and how it differs) |\n|------------|----------|---------------------------------------|\n| **The Silk Parasol** – San Gabriel [4] | San Gabriel | Offers a rice‑based plate (minced pork over rice), but the protein is pork—not chicken—and the venue is a refined Taiwanese tea house, not a street‑cart halal concept. |\n| **The Spice Alchemist** – Alhambra [5] | Alhambra | Serves “numbing peppercorn chicken,” so chicken is on the menu, but it’s a Szechuan entrée, not a chicken‑over‑rice cart dish, and the restaurant isn’t halal‑certified. |\n\nIf you’re specifically looking for a halal cart that serves chicken over rice, you’ll need to broaden the search beyond these five venues. Let me know if you’d like me to look for other neighborhoods, price ranges, or any additional preferences!",
+      "faithfulness": 4,
+      "answer_relevance": 5,
+      "declined": true,
+      "unsupported_claims": [
+        "the restaurant isn’t halal‑certified"
+      ],
+      "reason": "One claim about halal certification is not supported by the provided context.",
+      "hallucinated_names": [],
+      "citations": 2,
+      "valid_citations": 2
+    },
+    {
+      "set": "OOC",
+      "query": "Brazilian churrascaria with all-you-can-eat meat",
+      "answer": "There isn’t a Brazilian‑style churrascaria in the current results. The closest match is an all‑you‑can‑eat meat concept, but it’s a Japanese BBQ house rather than a Brazilian grill:\n\n- **Iron Griddle – Torrance** [1]  \n  *Type:* Japanese BBQ (interactive, all‑you‑can‑eat)  \n  *Why it’s similar:* Offers a high‑energy, all‑you‑can‑eat format with premium meat (Wagyu beef cuts).  \n  *How it differs:* The cuisine is Japanese BBQ, not Brazilian churrasco, and the setting is an industrial‑style space with tables equipped for self‑grilling rather than the traditional rod‑or‑skewer service of a churrascaria.\n\nIf you’re specifically looking for a Brazilian churrascaria with unlimited meat, you may need to broaden the search or try a different query. Let me know if you’d like me to look for other options or focus on a particular area of California!",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": true,
+      "unsupported_claims": [],
+      "reason": "All statements are supported by the retrieved context and the answer correctly indicates no exact match was found.",
+      "hallucinated_names": [],
+      "citations": 1,
+      "valid_citations": 1
+    },
+    {
+      "set": "OOC",
+      "query": "Scandinavian smorrebrod open sandwiches",
+      "answer": "I’m sorry—none of the restaurants in the current results specialize in Scandinavian smørrebrød or open‑sandwiches in that tradition.\n\n**Closest matches in the list**\n\n| Restaurant | Location | Why it’s similar (and how it differs) |\n|------------|----------|---------------------------------------|\n| **Pacific Peak** – Burbank | Burbank | Offers “studio club sandwiches” in a retro‑futuristic American diner, but the style is a classic club sandwich, not the rye‑based, topping‑heavy smørrebrød of Scandinavia. [1] |\n| **The Gilded Rose** – Pasadena | Pasadena | Serves “three tiers of sandwiches” as part of an upscale afternoon‑tea service; the presentation is elegant, yet the flavors and bread are not Scandinavian. [5] |\n| **Peasant’s Feast** – Solvang | Solvang | Features “seasonal sandwiches” in a modern Californian bistro, but again the concept and ingredients are Californian rather than Nordic. [2] |\n| **Granzella’s** – Williams | Williams | Known for massive Muffuletta sandwiches; hearty and delicious, but far from the open‑sandwich format of smørrebrød. [3] |\n| **The Velvet Poppy** – San Luis Obispo | San Luis Obispo | Highlights local tri‑tip sandwiches; tasty but not the rye‑bread, layered‑topping style you’re looking for. [4] |\n\n**What to do next**\n\nIf you’re set on authentic Scandinavian smørrebrød, you might need to broaden the search to include restaurants that specifically market Nordic or Danish cuisine—perhaps in Los Angeles, San Francisco, or the Bay Area where a few specialty cafés focus on open‑sandwich traditions. Let me know if you’d like me to look for those!",
+      "faithfulness": 3,
+      "answer_relevance": 5,
+      "declined": true,
+      "unsupported_claims": [
+        "the style is a classic club sandwich, not the rye‑based, topping‑heavy smørrebrød of Scandinavia.",
+        "the presentation is elegant, yet the flavors and bread are not Scandinavian.",
+        "the concept and ingredients are Californian rather than Nordic.",
+        "far from the open‑sandwich format of smørrebrød.",
+        "not the rye‑bread, layered‑topping style you’re looking for."
+      ],
+      "reason": "Most factual details are supported, but several evaluative statements about Scandinavian style and ingredients are not present in the retrieved context.",
+      "hallucinated_names": [],
+      "citations": 5,
+      "valid_citations": 5
+    },
+    {
+      "set": "OOC",
+      "query": "kosher deli with pastrami on rye",
+      "answer": "**The Rustic Rye – Burbank** [1]  \n- **Type:** Deli & bakery (European‑style)  \n- **Signature dish:** Pastrami on house‑baked rye  \n- **Vibe:** Nostalgic neighborhood corner shop  \n\n*How it differs:* The listing highlights the pastrami‑on‑rye sandwich you’re looking for, but it does **not specify that the deli is kosher**. If kosher certification is essential, you may want to call ahead to confirm whether they meet kosher standards.  \n\nThe other venues in the results (Little Sicily, Urban Harvest, The Golden Artichoke) do not serve pastrami on rye and are not identified as kosher delis. If you need a strictly kosher option, you might need to broaden the search or check local kosher directories for additional recommendations.",
+      "faithfulness": 5,
+      "answer_relevance": 4,
+      "declined": false,
+      "unsupported_claims": [],
+      "reason": "The answer accurately reflects the retrieved facts but cannot fully satisfy the kosher requirement, so relevance is slightly lower.",
+      "hallucinated_names": [],
+      "citations": 1,
+      "valid_citations": 1
+    },
+    {
+      "set": "OOC",
+      "query": "Russian pelmeni dumplings",
+      "answer": "The retrieved results don’t include any Russian‑style pelmeni, but there are a few spots that specialize in dumplings of other cuisines and might satisfy a craving for hearty, hand‑filled parcels:\n\n- **The Golden Gyoza – Gardena** – a minimalist Japanese dumpling house famous for its pan‑fried gyoza. It’s a fast‑paced, high‑quality spot, but the flavors are Japanese rather than Russian. [1]  \n- **The Golden Gyoza – Northridge** – a bright, fast‑casual Japanese dumpling bar that serves pork gyoza with a crisp “skirt.” Again, Japanese‑style, not pelmeni. [2]  \n- **The Iron Lotus – Chinatown** – a moody, contemporary dim‑sum venue offering truffle‑oil shrimp dumplings and wagyu potstickers. These are Chinese‑style dim‑sum, quite different from Russian pelmeni. [3]  \n- **Velvet Dragon – historic center of Chinatown** – a modern dim‑sum eatery with truffle‑infused siu mai and other inventive dumplings. Still Chinese‑inspired, not Russian. [5]\n\nThese are the closest matches in the current data because they all focus on dumplings, but none serve the traditional Russian pelmeni you asked about. If you’d like recommendations for authentic Russian pelmeni in California, you may need to run a new search with “Russian pelmeni” or “Eastern European dumplings” as the query.",
+      "faithfulness": 4,
+      "answer_relevance": 5,
+      "declined": true,
+      "unsupported_claims": [
+        "high‑quality spot"
+      ],
+      "reason": "All factual details match the retrieved data except the unsupported description \"high‑quality spot\".",
+      "hallucinated_names": [],
+      "citations": 4,
+      "valid_citations": 4
+    },
+    {
+      "set": "OOC",
+      "query": "Filipino kamayan feast",
+      "answer": "I’m sorry—none of the restaurants in the current results specialize in a Filipino kamayan feast. Peasant’s Feast [1] is a modern Californian bistro, Velvet Dragon [2] serves innovative dim‑sum, The Mission Hearth [3] offers Spanish‑Californian fare, Mandalay Moon [4] is a Burmese staple, and Kimchi Kingdom [5] focuses on Korean comfort food.  \n\nIf you’d like, we can run a new search focused on Filipino kamayan‑style dining or explore other types of communal‑feast experiences in California. Just let me know!",
+      "faithfulness": 5,
+      "answer_relevance": 5,
+      "declined": true,
+      "unsupported_claims": [],
+      "reason": "All factual statements are directly supported by the provided context and the answer correctly declines due to no matching restaurant.",
+      "hallucinated_names": [],
+      "citations": 5,
+      "valid_citations": 5
+    }
+  ]
+}

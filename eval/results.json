@@ -1,0 +1,644 @@
+{
+  "date": "2026-09-27",
+  "config": {
+    "embedding_model": "jina-embeddings-v3",
+    "image_embedding_model": "jina-clip-v2",
+    "reranker": "jina-reranker-v2-base-multilingual",
+    "llm_reranker": "openai/gpt-oss-120b",
+    "query_generator": "openai/gpt-oss-20b",
+    "vector_db": "ChromaDB (cosine HNSW)",
+    "fusion": "weighted RRF k=60, weights [0.25, 0.25, 2.0] over dense(restaurants), dense(culinary map), BM25",
+    "corpus_restaurants": 210,
+    "rerank_candidates": 20,
+    "split": "Sets B and C: 50/50 dev/test (seed 42); fusion tuned on dev, reported on test",
+    "bootstrap_resamples": 1000
+  },
+  "text": {
+    "Set A — rule-labelled requests": {
+      "keyword": {
+        "recall@1": 0.0551,
+        "recall@5": 0.1887,
+        "recall@10": 0.3043,
+        "hit@1": 0.3,
+        "hit@5": 0.625,
+        "precision@5": 0.305,
+        "mrr": 0.4104,
+        "ndcg@10": 0.3364,
+        "mrr_ci95": [
+          0.2884,
+          0.5342
+        ],
+        "ndcg@10_ci95": [
+          0.2348,
+          0.4389
+        ],
+        "n_queries": 40,
+        "latency_p50_ms": 1.0,
+        "failed_queries": 0
+      },
+      "bm25": {
+        "recall@1": 0.1449,
+        "recall@5": 0.5105,
+        "recall@10": 0.7129,
+        "hit@1": 0.85,
+        "hit@5": 0.975,
+        "precision@5": 0.695,
+        "mrr": 0.8979,
+        "ndcg@10": 0.7667,
+        "mrr_ci95": [
+          0.8208,
+          0.9708
+        ],
+        "ndcg@10_ci95": [
+          0.696,
+          0.8356
+        ],
+        "n_queries": 40,
+        "latency_p50_ms": 0.2,
+        "failed_queries": 0
+      },
+      "dense": {
+        "recall@1": 0.1449,
+        "recall@5": 0.369,
+        "recall@10": 0.4915,
+        "hit@1": 0.675,
+        "hit@5": 0.825,
+        "precision@5": 0.495,
+        "mrr": 0.7382,
+        "ndcg@10": 0.5577,
+        "mrr_ci95": [
+          0.6132,
+          0.8549
+        ],
+        "ndcg@10_ci95": [
+          0.4537,
+          0.6619
+        ],
+        "n_queries": 40,
+        "latency_p50_ms": 747.1,
+        "failed_queries": 0
+      },
+      "hybrid (equal weights)": {
+        "recall@1": 0.1605,
+        "recall@5": 0.4629,
+        "recall@10": 0.6986,
+        "hit@1": 0.825,
+        "hit@5": 0.95,
+        "precision@5": 0.645,
+        "mrr": 0.8662,
+        "ndcg@10": 0.7533,
+        "mrr_ci95": [
+          0.7667,
+          0.9542
+        ],
+        "ndcg@10_ci95": [
+          0.6719,
+          0.826
+        ],
+        "n_queries": 40,
+        "latency_p50_ms": 745.8,
+        "failed_queries": 0
+      },
+      "hybrid": {
+        "recall@1": 0.1324,
+        "recall@5": 0.5203,
+        "recall@10": 0.7294,
+        "hit@1": 0.825,
+        "hit@5": 0.975,
+        "precision@5": 0.71,
+        "mrr": 0.8896,
+        "ndcg@10": 0.782,
+        "mrr_ci95": [
+          0.8125,
+          0.9583
+        ],
+        "ndcg@10_ci95": [
+          0.7125,
+          0.8487
+        ],
+        "n_queries": 40,
+        "latency_p50_ms": 749.5,
+        "failed_queries": 0
+      },
+      "hybrid+rerank": {
+        "recall@1": 0.1616,
+        "recall@5": 0.5533,
+        "recall@10": 0.7474,
+        "hit@1": 0.825,
+        "hit@5": 0.975,
+        "precision@5": 0.735,
+        "mrr": 0.8875,
+        "ndcg@10": 0.8172,
+        "mrr_ci95": [
+          0.8083,
+          0.9583
+        ],
+        "ndcg@10_ci95": [
+          0.7471,
+          0.8816
+        ],
+        "n_queries": 40,
+        "latency_p50_ms": 1482.5,
+        "failed_queries": 0
+      }
+    },
+    "Set B — known-item paraphrases (test split)": {
+      "keyword": {
+        "recall@1": 0.0097,
+        "recall@5": 0.0534,
+        "recall@10": 0.1408,
+        "hit@1": 0.0097,
+        "hit@5": 0.0583,
+        "precision@5": 0.0117,
+        "mrr": 0.0377,
+        "ndcg@10": 0.0615,
+        "mrr_ci95": [
+          0.0161,
+          0.0656
+        ],
+        "ndcg@10_ci95": [
+          0.0316,
+          0.0962
+        ],
+        "n_queries": 103,
+        "latency_p50_ms": 1.7,
+        "failed_queries": 0
+      },
+      "bm25": {
+        "recall@1": 0.9175,
+        "recall@5": 0.9903,
+        "recall@10": 0.9903,
+        "hit@1": 0.9806,
+        "hit@5": 0.9903,
+        "precision@5": 0.2233,
+        "mrr": 0.9854,
+        "ndcg@10": 0.9859,
+        "mrr_ci95": [
+          0.9612,
+          1.0
+        ],
+        "ndcg@10_ci95": [
+          0.9621,
+          1.0
+        ],
+        "n_queries": 103,
+        "latency_p50_ms": 0.3,
+        "failed_queries": 0
+      },
+      "dense": {
+        "recall@1": 0.7573,
+        "recall@5": 0.9612,
+        "recall@10": 0.9709,
+        "hit@1": 0.8155,
+        "hit@5": 0.9612,
+        "precision@5": 0.2175,
+        "mrr": 0.8835,
+        "ndcg@10": 0.9057,
+        "mrr_ci95": [
+          0.8285,
+          0.9337
+        ],
+        "ndcg@10_ci95": [
+          0.859,
+          0.9471
+        ],
+        "n_queries": 103,
+        "latency_p50_ms": 774.0,
+        "failed_queries": 0
+      },
+      "hybrid (equal weights)": {
+        "recall@1": 0.8495,
+        "recall@5": 0.9709,
+        "recall@10": 0.9806,
+        "hit@1": 0.9126,
+        "hit@5": 0.9709,
+        "precision@5": 0.2194,
+        "mrr": 0.9409,
+        "ndcg@10": 0.9509,
+        "mrr_ci95": [
+          0.8981,
+          0.9757
+        ],
+        "ndcg@10_ci95": [
+          0.913,
+          0.9801
+        ],
+        "n_queries": 103,
+        "latency_p50_ms": 886.8,
+        "failed_queries": 0
+      },
+      "hybrid": {
+        "recall@1": 0.8981,
+        "recall@5": 0.9903,
+        "recall@10": 0.9903,
+        "hit@1": 0.9612,
+        "hit@5": 0.9903,
+        "precision@5": 0.2233,
+        "mrr": 0.9741,
+        "ndcg@10": 0.9775,
+        "mrr_ci95": [
+          0.945,
+          0.9951
+        ],
+        "ndcg@10_ci95": [
+          0.9509,
+          0.9964
+        ],
+        "n_queries": 103,
+        "latency_p50_ms": 856.9,
+        "failed_queries": 0
+      },
+      "hybrid+rerank": {
+        "recall@1": 0.8981,
+        "recall@5": 0.9903,
+        "recall@10": 0.9903,
+        "hit@1": 0.9612,
+        "hit@5": 0.9903,
+        "precision@5": 0.2233,
+        "mrr": 0.9757,
+        "ndcg@10": 0.9795,
+        "mrr_ci95": [
+          0.9466,
+          0.9951
+        ],
+        "ndcg@10_ci95": [
+          0.953,
+          0.9964
+        ],
+        "n_queries": 103,
+        "latency_p50_ms": 1670.0,
+        "failed_queries": 0
+      }
+    },
+    "Set C — vague known-item, no names/places/dishes (test split)": {
+      "keyword": {
+        "recall@1": 0.0096,
+        "recall@5": 0.0481,
+        "recall@10": 0.1202,
+        "hit@1": 0.0096,
+        "hit@5": 0.0481,
+        "precision@5": 0.0115,
+        "mrr": 0.0348,
+        "ndcg@10": 0.0542,
+        "mrr_ci95": [
+          0.014,
+          0.0603
+        ],
+        "ndcg@10_ci95": [
+          0.0259,
+          0.0864
+        ],
+        "n_queries": 104,
+        "latency_p50_ms": 1.7,
+        "failed_queries": 0
+      },
+      "bm25": {
+        "recall@1": 0.8221,
+        "recall@5": 0.9712,
+        "recall@10": 0.9808,
+        "hit@1": 0.8942,
+        "hit@5": 0.9712,
+        "precision@5": 0.2231,
+        "mrr": 0.9218,
+        "ndcg@10": 0.9362,
+        "mrr_ci95": [
+          0.8737,
+          0.9607
+        ],
+        "ndcg@10_ci95": [
+          0.8942,
+          0.969
+        ],
+        "n_queries": 104,
+        "latency_p50_ms": 0.3,
+        "failed_queries": 0
+      },
+      "dense": {
+        "recall@1": 0.2788,
+        "recall@5": 0.6154,
+        "recall@10": 0.75,
+        "hit@1": 0.2981,
+        "hit@5": 0.6346,
+        "precision@5": 0.1346,
+        "mrr": 0.4387,
+        "ndcg@10": 0.5124,
+        "mrr_ci95": [
+          0.3599,
+          0.5187
+        ],
+        "ndcg@10_ci95": [
+          0.4374,
+          0.5856
+        ],
+        "n_queries": 104,
+        "latency_p50_ms": 889.0,
+        "failed_queries": 0
+      },
+      "hybrid (equal weights)": {
+        "recall@1": 0.5192,
+        "recall@5": 0.8702,
+        "recall@10": 0.9231,
+        "hit@1": 0.5577,
+        "hit@5": 0.8846,
+        "precision@5": 0.1981,
+        "mrr": 0.6838,
+        "ndcg@10": 0.7416,
+        "mrr_ci95": [
+          0.6002,
+          0.7561
+        ],
+        "ndcg@10_ci95": [
+          0.6744,
+          0.8027
+        ],
+        "n_queries": 104,
+        "latency_p50_ms": 900.4,
+        "failed_queries": 0
+      },
+      "hybrid": {
+        "recall@1": 0.726,
+        "recall@5": 0.9712,
+        "recall@10": 1.0,
+        "hit@1": 0.7885,
+        "hit@5": 0.9712,
+        "precision@5": 0.2231,
+        "mrr": 0.8661,
+        "ndcg@10": 0.8971,
+        "mrr_ci95": [
+          0.8088,
+          0.9199
+        ],
+        "ndcg@10_ci95": [
+          0.8555,
+          0.9379
+        ],
+        "n_queries": 104,
+        "latency_p50_ms": 841.2,
+        "failed_queries": 0
+      },
+      "hybrid+rerank": {
+        "recall@1": 0.8365,
+        "recall@5": 0.9904,
+        "recall@10": 1.0,
+        "hit@1": 0.9038,
+        "hit@5": 0.9904,
+        "precision@5": 0.2269,
+        "mrr": 0.9445,
+        "ndcg@10": 0.9567,
+        "mrr_ci95": [
+          0.9083,
+          0.9736
+        ],
+        "ndcg@10_ci95": [
+          0.9292,
+          0.9798
+        ],
+        "n_queries": 104,
+        "latency_p50_ms": 1702.5,
+        "failed_queries": 0
+      }
+    },
+    "Set D — hand-written human-style known-item": {
+      "keyword": {
+        "recall@1": 0.04,
+        "recall@5": 0.16,
+        "recall@10": 0.24,
+        "hit@1": 0.04,
+        "hit@5": 0.16,
+        "precision@5": 0.032,
+        "mrr": 0.0914,
+        "ndcg@10": 0.1264,
+        "mrr_ci95": [
+          0.02,
+          0.1886
+        ],
+        "ndcg@10_ci95": [
+          0.0345,
+          0.2275
+        ],
+        "n_queries": 25,
+        "latency_p50_ms": 1.8,
+        "failed_queries": 0
+      },
+      "bm25": {
+        "recall@1": 0.86,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "hit@1": 0.88,
+        "hit@5": 1.0,
+        "precision@5": 0.216,
+        "mrr": 0.94,
+        "ndcg@10": 0.9582,
+        "mrr_ci95": [
+          0.88,
+          1.0
+        ],
+        "ndcg@10_ci95": [
+          0.9139,
+          1.0
+        ],
+        "n_queries": 25,
+        "latency_p50_ms": 0.3,
+        "failed_queries": 0
+      },
+      "dense": {
+        "recall@1": 0.8,
+        "recall@5": 0.92,
+        "recall@10": 0.96,
+        "hit@1": 0.84,
+        "hit@5": 0.92,
+        "precision@5": 0.2,
+        "mrr": 0.8757,
+        "ndcg@10": 0.8958,
+        "mrr_ci95": [
+          0.7514,
+          0.97
+        ],
+        "ndcg@10_ci95": [
+          0.7877,
+          0.9772
+        ],
+        "n_queries": 25,
+        "latency_p50_ms": 843.6,
+        "failed_queries": 0
+      },
+      "hybrid (equal weights)": {
+        "recall@1": 0.92,
+        "recall@5": 0.96,
+        "recall@10": 1.0,
+        "hit@1": 0.96,
+        "hit@5": 0.96,
+        "precision@5": 0.208,
+        "mrr": 0.964,
+        "ndcg@10": 0.9716,
+        "mrr_ci95": [
+          0.892,
+          1.0
+        ],
+        "ndcg@10_ci95": [
+          0.9147,
+          1.0
+        ],
+        "n_queries": 25,
+        "latency_p50_ms": 888.7,
+        "failed_queries": 0
+      },
+      "hybrid": {
+        "recall@1": 0.9,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "hit@1": 0.92,
+        "hit@5": 1.0,
+        "precision@5": 0.216,
+        "mrr": 0.9533,
+        "ndcg@10": 0.9677,
+        "mrr_ci95": [
+          0.88,
+          1.0
+        ],
+        "ndcg@10_ci95": [
+          0.92,
+          1.0
+        ],
+        "n_queries": 25,
+        "latency_p50_ms": 836.2,
+        "failed_queries": 0
+      },
+      "hybrid+rerank": {
+        "recall@1": 0.96,
+        "recall@5": 1.0,
+        "recall@10": 1.0,
+        "hit@1": 1.0,
+        "hit@5": 1.0,
+        "precision@5": 0.216,
+        "mrr": 1.0,
+        "ndcg@10": 1.0,
+        "mrr_ci95": [
+          1.0,
+          1.0
+        ],
+        "ndcg@10_ci95": [
+          1.0,
+          1.0
+        ],
+        "n_queries": 25,
+        "latency_p50_ms": 1607.0,
+        "failed_queries": 0
+      }
+    }
+  },
+  "paired_deltas": {
+    "Set A — rule-labelled requests": {
+      "hybrid − bm25": {
+        "metric": "ndcg@10",
+        "mean_delta": 0.0154,
+        "ci95": [
+          -0.0126,
+          0.0473
+        ]
+      },
+      "hybrid+rerank − bm25": {
+        "metric": "ndcg@10",
+        "mean_delta": 0.0506,
+        "ci95": [
+          0.0005,
+          0.1032
+        ]
+      },
+      "hybrid (tuned) − hybrid (equal weights)": {
+        "metric": "ndcg@10",
+        "mean_delta": 0.0287,
+        "ci95": [
+          -0.0191,
+          0.0778
+        ]
+      }
+    },
+    "Set B — known-item paraphrases (test split)": {
+      "hybrid − bm25": {
+        "metric": "ndcg@10",
+        "mean_delta": -0.0084,
+        "ci95": [
+          -0.0217,
+          0.0
+        ]
+      },
+      "hybrid+rerank − bm25": {
+        "metric": "ndcg@10",
+        "mean_delta": -0.0064,
+        "ci95": [
+          -0.0179,
+          0.0016
+        ]
+      },
+      "hybrid (tuned) − hybrid (equal weights)": {
+        "metric": "ndcg@10",
+        "mean_delta": 0.0266,
+        "ci95": [
+          0.0091,
+          0.0492
+        ]
+      }
+    },
+    "Set C — vague known-item, no names/places/dishes (test split)": {
+      "hybrid − bm25": {
+        "metric": "ndcg@10",
+        "mean_delta": -0.0391,
+        "ci95": [
+          -0.0737,
+          -0.008
+        ]
+      },
+      "hybrid+rerank − bm25": {
+        "metric": "ndcg@10",
+        "mean_delta": 0.0205,
+        "ci95": [
+          -0.0098,
+          0.0537
+        ]
+      },
+      "hybrid (tuned) − hybrid (equal weights)": {
+        "metric": "ndcg@10",
+        "mean_delta": 0.1555,
+        "ci95": [
+          0.1098,
+          0.2102
+        ]
+      }
+    },
+    "Set D — hand-written human-style known-item": {
+      "hybrid − bm25": {
+        "metric": "ndcg@10",
+        "mean_delta": 0.0095,
+        "ci95": [
+          -0.0505,
+          0.0591
+        ]
+      },
+      "hybrid+rerank − bm25": {
+        "metric": "ndcg@10",
+        "mean_delta": 0.0418,
+        "ci95": [
+          0.0,
+          0.0861
+        ]
+      },
+      "hybrid (tuned) − hybrid (equal weights)": {
+        "metric": "ndcg@10",
+        "mean_delta": -0.0038,
+        "ci95": [
+          -0.0368,
+          0.0215
+        ]
+      }
+    }
+  },
+  "images": {
+    "recall@1": 0.8257,
+    "recall@5": 0.9817,
+    "recall@10": 1.0,
+    "mrr": 0.8985,
+    "n_queries": 109,
+    "n_images_indexed": 118
+  }
+}

@@ -1,0 +1,468 @@
+{
+  "summary": {
+    "router_model": "openai/gpt-oss-20b",
+    "n_queries": 30,
+    "tool_accuracy": 1.0,
+    "arg_accuracy": 1.0,
+    "n_arg_checked": 20,
+    "per_expected_tool": {
+      "get_restaurant_info": "4/4",
+      "get_review": "3/3",
+      "none": "3/3",
+      "recommend_by_vibe": "13/13",
+      "search_images": "3/3",
+      "search_knowledge_base": "4/4"
+    }
+  },
+  "rows": [
+    {
+      "query": "Tell me about Iron & Embers",
+      "expected_tools": [
+        "get_restaurant_info"
+      ],
+      "tool": "get_restaurant_info",
+      "args": {
+        "restaurant_name": "Iron & Embers"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "What's the price range at Sakura Garden?",
+      "expected_tools": [
+        "get_restaurant_info"
+      ],
+      "tool": "get_restaurant_info",
+      "args": {
+        "restaurant_name": "Sakura Garden"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "Is The Obsidian Room any good? What do they serve?",
+      "expected_tools": [
+        "get_restaurant_info"
+      ],
+      "tool": "get_restaurant_info",
+      "args": {
+        "restaurant_name": "The Obsidian Room"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "Give me details on Kimchi Kingdom",
+      "expected_tools": [
+        "get_restaurant_info"
+      ],
+      "tool": "get_restaurant_info",
+      "args": {
+        "restaurant_name": "Kimchi Kingdom"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "What did reviewers say about The Gilded Artichoke?",
+      "expected_tools": [
+        "get_review"
+      ],
+      "tool": "get_review",
+      "args": {
+        "restaurant_name": "The Gilded Artichoke"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "Show me the user review for Iron & Embers",
+      "expected_tools": [
+        "get_review"
+      ],
+      "tool": "get_review",
+      "args": {
+        "restaurant_name": "Iron & Embers"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "Any customer feedback on Sapphire Soul?",
+      "expected_tools": [
+        "get_review"
+      ],
+      "tool": "get_review",
+      "args": {
+        "restaurant_name": "Sapphire Soul"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "Find me some moody restaurants",
+      "expected_tools": [
+        "recommend_by_vibe"
+      ],
+      "tool": "recommend_by_vibe",
+      "args": {
+        "vibe": "moody"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "romantic candlelit dinner spot",
+      "expected_tools": [
+        "recommend_by_vibe"
+      ],
+      "tool": "recommend_by_vibe",
+      "args": {
+        "vibe": "romantic candlelit dinner spot"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "Cheap tacos near the beach under $$",
+      "expected_tools": [
+        "recommend_by_vibe"
+      ],
+      "tool": "recommend_by_vibe",
+      "args": {
+        "location": null,
+        "max_price": 2,
+        "min_rating": null,
+        "vibe": "cheap tacos near the beach"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "Sushi in Little Tokyo",
+      "expected_tools": [
+        "recommend_by_vibe"
+      ],
+      "tool": "recommend_by_vibe",
+      "args": {
+        "location": "Little Tokyo",
+        "vibe": "sushi"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "Where can I get dim sum in Chinatown?",
+      "expected_tools": [
+        "recommend_by_vibe"
+      ],
+      "tool": "recommend_by_vibe",
+      "args": {
+        "location": "Chinatown",
+        "max_price": null,
+        "min_rating": null,
+        "vibe": "dim sum"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "Places to eat in Pasadena rated at least 4.5",
+      "expected_tools": [
+        "recommend_by_vibe"
+      ],
+      "tool": "recommend_by_vibe",
+      "args": {
+        "location": "Pasadena",
+        "min_rating": 4.5,
+        "vibe": "restaurants in Pasadena rated at least 4.5"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "A budget-friendly $ vegan lunch",
+      "expected_tools": [
+        "recommend_by_vibe"
+      ],
+      "tool": "recommend_by_vibe",
+      "args": {
+        "location": null,
+        "max_price": 1,
+        "min_rating": null,
+        "vibe": "budget-friendly vegan lunch"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "Korean BBQ in Koreatown, $$$ or less",
+      "expected_tools": [
+        "recommend_by_vibe"
+      ],
+      "tool": "recommend_by_vibe",
+      "args": {
+        "location": "Koreatown",
+        "max_price": 3,
+        "min_rating": null,
+        "vibe": "Korean BBQ"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "Highly rated Italian, 4.7 stars or better",
+      "expected_tools": [
+        "recommend_by_vibe"
+      ],
+      "tool": "recommend_by_vibe",
+      "args": {
+        "location": null,
+        "max_price": null,
+        "min_rating": 4.7,
+        "vibe": "Italian"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "lively place for a big group birthday dinner",
+      "expected_tools": [
+        "recommend_by_vibe"
+      ],
+      "tool": "recommend_by_vibe",
+      "args": {
+        "location": null,
+        "max_price": null,
+        "min_rating": null,
+        "vibe": "lively place for a big group birthday dinner"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "quiet zen spot to read with tea",
+      "expected_tools": [
+        "recommend_by_vibe"
+      ],
+      "tool": "recommend_by_vibe",
+      "args": {
+        "location": null,
+        "max_price": null,
+        "min_rating": null,
+        "vibe": "quiet zen spot to read with tea"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "Persian food in Westwood",
+      "expected_tools": [
+        "recommend_by_vibe"
+      ],
+      "tool": "recommend_by_vibe",
+      "args": {
+        "location": "Westwood",
+        "max_price": null,
+        "min_rating": null,
+        "vibe": "Persian food"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "cozy mountain lodge with steaks in Truckee",
+      "expected_tools": [
+        "recommend_by_vibe"
+      ],
+      "tool": "recommend_by_vibe",
+      "args": {
+        "location": "Truckee",
+        "vibe": "cozy mountain lodge with steaks"
+      },
+      "tool_ok": true,
+      "args_checked": true,
+      "args_ok": true,
+      "reason": ""
+    },
+    {
+      "query": "Which restaurant has a greenhouse dining room?",
+      "expected_tools": [
+        "search_knowledge_base",
+        "recommend_by_vibe"
+      ],
+      "tool": "search_knowledge_base",
+      "args": {
+        "query": "greenhouse dining room restaurant California"
+      },
+      "tool_ok": true,
+      "args_checked": false,
+      "args_ok": null,
+      "reason": ""
+    },
+    {
+      "query": "Where do reviewers mention lavender chicken?",
+      "expected_tools": [
+        "search_knowledge_base",
+        "get_review"
+      ],
+      "tool": "search_knowledge_base",
+      "args": {
+        "query": "lavender chicken"
+      },
+      "tool_ok": true,
+      "args_checked": false,
+      "args_ok": null,
+      "reason": ""
+    },
+    {
+      "query": "Is there a place with live harp music?",
+      "expected_tools": [
+        "search_knowledge_base",
+        "recommend_by_vibe"
+      ],
+      "tool": "search_knowledge_base",
+      "args": {
+        "query": "live harp music"
+      },
+      "tool_ok": true,
+      "args_checked": false,
+      "args_ok": null,
+      "reason": ""
+    },
+    {
+      "query": "Which spot is inside an old sewing factory?",
+      "expected_tools": [
+        "search_knowledge_base",
+        "recommend_by_vibe"
+      ],
+      "tool": "search_knowledge_base",
+      "args": {
+        "query": "restaurant inside an old sewing factory"
+      },
+      "tool_ok": true,
+      "args_checked": false,
+      "args_ok": null,
+      "reason": ""
+    },
+    {
+      "query": "Show me photos of a margherita pizza",
+      "expected_tools": [
+        "search_images"
+      ],
+      "tool": "search_images",
+      "args": {
+        "k": 3,
+        "query": "margherita pizza"
+      },
+      "tool_ok": true,
+      "args_checked": false,
+      "args_ok": null,
+      "reason": ""
+    },
+    {
+      "query": "What does a bowl of ramen with a soft-boiled egg look like?",
+      "expected_tools": [
+        "search_images"
+      ],
+      "tool": "search_images",
+      "args": {
+        "k": 3,
+        "query": "ramen bowl soft-boiled egg"
+      },
+      "tool_ok": true,
+      "args_checked": false,
+      "args_ok": null,
+      "reason": ""
+    },
+    {
+      "query": "pictures of a sunlit dining room full of plants",
+      "expected_tools": [
+        "search_images"
+      ],
+      "tool": "search_images",
+      "args": {
+        "k": 3,
+        "query": "sunlit dining room full of plants"
+      },
+      "tool_ok": true,
+      "args_checked": false,
+      "args_ok": null,
+      "reason": ""
+    },
+    {
+      "query": "Hi there!",
+      "expected_tools": [
+        "none"
+      ],
+      "tool": "none",
+      "args": {},
+      "tool_ok": true,
+      "args_checked": false,
+      "args_ok": null,
+      "reason": ""
+    },
+    {
+      "query": "What can you help me with?",
+      "expected_tools": [
+        "none"
+      ],
+      "tool": "none",
+      "args": {},
+      "tool_ok": true,
+      "args_checked": false,
+      "args_ok": null,
+      "reason": ""
+    },
+    {
+      "query": "Thanks, that's all for now",
+      "expected_tools": [
+        "none"
+      ],
+      "tool": "none",
+      "args": {},
+      "tool_ok": true,
+      "args_checked": false,
+      "args_ok": null,
+      "reason": ""
+    }
+  ]
+}

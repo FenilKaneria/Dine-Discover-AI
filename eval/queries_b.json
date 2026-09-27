@@ -1,0 +1,822 @@
+[
+  {
+    "itemId": 1000001,
+    "query": "Looking for a chic farm-to-table spot with green walls and roasted chicken in Silver Lake"
+  },
+  {
+    "itemId": 1000002,
+    "query": "Baja seafood tacos and ceviche near the pier in Santa Monica"
+  },
+  {
+    "itemId": 1000003,
+    "query": "Industrial steakhouse with dry-aged ribeye and bone marrow sauce in DTLA"
+  },
+  {
+    "itemId": 1000004,
+    "query": "Quiet Japanese kaiseki experience focusing on seasonal flavors in Little Tokyo"
+  },
+  {
+    "itemId": 1000005,
+    "query": "Modern Italian trattoria with table‑side pasta and a lively West Hollywood vibe"
+  },
+  {
+    "itemId": 1000006,
+    "query": "Family‑style Lebanese place with communal hummus topped by wagyu in Glendale"
+  },
+  {
+    "itemId": 1000007,
+    "query": "Romantic wine bar with French‑Mediterranean bites and exposed brick in Pasadena"
+  },
+  {
+    "itemId": 1000008,
+    "query": "Sichuan street food under neon lights, perfect for a quick spicy noodle hit"
+  },
+  {
+    "itemId": 1000009,
+    "query": "Hip brunch spot with ricotta pancakes and patio umbrellas in Echo Park"
+  },
+  {
+    "itemId": 1000010,
+    "query": "Southern soul food fusion with fried chicken waffles and a vibrant Inglewood atmosphere"
+  },
+  {
+    "itemId": 1000011,
+    "query": "Fresh Vietnamese dishes with lemongrass flavors in a tropical vibe near Culver City"
+  },
+  {
+    "itemId": 1000012,
+    "query": "Upscale coastal Italian dining with sea breeze, try uni pasta in Manhattan Beach"
+  },
+  {
+    "itemId": 1000013,
+    "query": "Colorful Oaxacan family spot serving mole negro in Boyle Heights"
+  },
+  {
+    "itemId": 1000014,
+    "query": "Old-Hollywood Continental supper club with plush booths and steak tartare"
+  },
+  {
+    "itemId": 1000015,
+    "query": "High-energy Korean BBQ spot in Koreatown with loud, rhythmic atmosphere"
+  },
+  {
+    "itemId": 1000016,
+    "query": "Hidden Eastern Mediterranean café with garden seating in Los Feliz"
+  },
+  {
+    "itemId": 1000017,
+    "query": "Nashville-style fried chicken with analog record vibes in Highland Park"
+  },
+  {
+    "itemId": 1000018,
+    "query": "Experimental Japanese omakase bar with dry-aged fish, quiet Downtown LA"
+  },
+  {
+    "itemId": 1000019,
+    "query": "Plant-based gastropub with jackfruit carnitas and craft beers near Venice Beach"
+  },
+  {
+    "itemId": 1000020,
+    "query": "Modern Indian restaurant with copper accents, try butter chicken pot pie in Pasadena"
+  },
+  {
+    "itemId": 1000021,
+    "query": "Cozy Italian spot with homemade pappardelle and wild boar ragu in Sherman Oaks"
+  },
+  {
+    "itemId": 1000022,
+    "query": "Dim-lit tapas bar with crispy paella and sherry in a hidden Silver Lake patio"
+  },
+  {
+    "itemId": 1000023,
+    "query": "Opulent Persian dining with saffron kabobs and crystal chandeliers in Glendale"
+  },
+  {
+    "itemId": 1000024,
+    "query": "High‑ceiling loft brunch featuring savory chicken waffles and house syrups in Long Beach"
+  },
+  {
+    "itemId": 1000025,
+    "query": "Bustling Chinatown dim sum place for weekend crowds"
+  },
+  {
+    "itemId": 1000026,
+    "query": "Malibu seafood shack with overstuffed lobster rolls and ocean view"
+  },
+  {
+    "itemId": 1000027,
+    "query": "Sunday soul food in Compton with smothered pork chops and peach cobbler"
+  },
+  {
+    "itemId": 1000028,
+    "query": "Neon‑lit sushi fusion spot with spicy tuna crispy rice in Westwood"
+  },
+  {
+    "itemId": 1000029,
+    "query": "Festive Tex‑Mex cantina with huge margaritas and brisket tacos in North Hollywood"
+  },
+  {
+    "itemId": 1000030,
+    "query": "Quiet canyon eatery with foraged mushroom tart in Topanga"
+  },
+  {
+    "itemId": 1000031,
+    "query": "Szechuan chicken with numbing peppercorns, calm modern spot in Alhambra"
+  },
+  {
+    "itemId": 1000032,
+    "query": "Big cracked crab platters and sourdough bowls by the San Pedro docks"
+  },
+  {
+    "itemId": 1000033,
+    "query": "Vegan smoked beet tartare in a sunlit Venice‑style bistro on Abbot Kinney"
+  },
+  {
+    "itemId": 1000034,
+    "query": "Hearty Godfather sub and massive meatballs at a bustling San Pedro deli"
+  },
+  {
+    "itemId": 1000035,
+    "query": "Persian tahdig and cherry‑polo in a jewel‑tinted lounge in Westwood"
+  },
+  {
+    "itemId": 1000036,
+    "query": "Duck carnitas with blackberry mole under papel picado in East LA"
+  },
+  {
+    "itemId": 1000037,
+    "query": "Kimchi‑topped poutine and bulgogi sliders in a neon‑lit Koreatown gastropub"
+  },
+  {
+    "itemId": 1000038,
+    "query": "Low‑and‑slow brisket and smoked trout salad in a cabin‑style smokehouse in Eagle Rock"
+  },
+  {
+    "itemId": 1000039,
+    "query": "Three‑foot dosas and coconut chutneys in a lively Little India spot"
+  },
+  {
+    "itemId": 1000040,
+    "query": "Retro‑futuristic milkshakes and studio club sandwiches in Burbank"
+  },
+  {
+    "itemId": 1000041,
+    "query": "Looking for a quiet sidewalk café with French crepes in South Pasadena"
+  },
+  {
+    "itemId": 1000042,
+    "query": "Need Texas BBQ with moist brisket and spicy pickles in a warehouse vibe"
+  },
+  {
+    "itemId": 1000043,
+    "query": "Business lunch spot with kale quinoa bowls and seared salmon near Mid-Wilshire"
+  },
+  {
+    "itemId": 1000044,
+    "query": "Night market tacos with charcoal onions, moody street food feel in Whittier"
+  },
+  {
+    "itemId": 1000045,
+    "query": "Fast Japanese dumplings, pan‑fried gyoza in a tiny wooden shop"
+  },
+  {
+    "itemId": 1000046,
+    "query": "Refined seafood lounge with harbor view, sea urchin raw bar in Redondo Beach"
+  },
+  {
+    "itemId": 1000047,
+    "query": "Pastel Japanese dessert café with matcha parfaits for weekend crowds"
+  },
+  {
+    "itemId": 1000048,
+    "query": "German beer hall with pretzels, schnitzel and massive steins in Northridge"
+  },
+  {
+    "itemId": 1000049,
+    "query": "Exclusive French‑California fine dining, private estate vibe in Bel Air"
+  },
+  {
+    "itemId": 1000050,
+    "query": "Fast Hong Kong style noodle bar, instant noodles and pineapple buns in Monterey Park"
+  },
+  {
+    "itemId": 1000051,
+    "query": "Modern Indian grill with a huge clay oven and velvet booths in Studio City"
+  },
+  {
+    "itemId": 1000052,
+    "query": "Quirky ramen spot with 18‑hour tonkotsu broth in Sawtelle"
+  },
+  {
+    "itemId": 1000053,
+    "query": "Greek taverna on a white‑washed patio serving charred octopus in Tarzana"
+  },
+  {
+    "itemId": 1000054,
+    "query": "Sleek Chinese BBQ house with honey‑glazed char siu in Cerritos"
+  },
+  {
+    "itemId": 1000055,
+    "query": "Coastal Oaxacan fusion place with mezcal cocktails in Santa Monica"
+  },
+  {
+    "itemId": 1000056,
+    "query": "Quiet wine bar for long chats over Central Coast Pinot in Claremont"
+  },
+  {
+    "itemId": 1000057,
+    "query": "Rowdy gastropub with craft IPAs and rock music in Huntington Beach"
+  },
+  {
+    "itemId": 1000058,
+    "query": "Family‑run Korean spot with the best banchan and soondubu in Gardena"
+  },
+  {
+    "itemId": 1000059,
+    "query": "European‑style cafe with lavender pastries and quiet sidewalk seating in Larchmont Village"
+  },
+  {
+    "itemId": 1000060,
+    "query": "Colorful taqueria known for al pastor in East Los Angeles"
+  },
+  {
+    "itemId": 1000061,
+    "query": "Looking for a luxe French‑Vietnamese spot with truffle‑oiled shaking beef"
+  },
+  {
+    "itemId": 1000062,
+    "query": "Plant‑based deli in Pasadena with smoked carrot lox bagels"
+  },
+  {
+    "itemId": 1000063,
+    "query": "Neon Taiwanese night market vibe, want crispy salt‑and‑pepper chicken"
+  },
+  {
+    "itemId": 1000064,
+    "query": "Late‑night Northern Italian in downtown LA, craving risotto"
+  },
+  {
+    "itemId": 1000065,
+    "query": "Quiet American chophouse in Encino, need thick‑cut prime rib"
+  },
+  {
+    "itemId": 1000066,
+    "query": "Trendy pho shop in Highland Park with vegan broth"
+  },
+  {
+    "itemId": 1000070,
+    "query": "Moody Cajun‑Creole spot in Long Beach with live jazz nights"
+  },
+  {
+    "itemId": 1000071,
+    "query": "Mid-century vibe, creative American dishes, duck-fat tater tots in Silver Lake"
+  },
+  {
+    "itemId": 1000072,
+    "query": "Wood-fired pizza with thin sourdough crust and squash blossom toppings near Altadena"
+  },
+  {
+    "itemId": 1000073,
+    "query": "Romantic seafood dinner with cliffside sunset views in Malibu"
+  },
+  {
+    "itemId": 1000074,
+    "query": "Quiet noodle spot, spicy chili oil, thick biang biang noodles, San Gabriel"
+  },
+  {
+    "itemId": 1000075,
+    "query": "Intimate candlelit French bistro, steak frites, near Griffith Observatory"
+  },
+  {
+    "itemId": 1000076,
+    "query": "Modern farmhouse, applewood aroma, honeycomb ricotta toast, Eagle Rock"
+  },
+  {
+    "itemId": 1000077,
+    "query": "Authentic Japanese izakaya, charcoal yakitori, tranquil setting in Torrance"
+  },
+  {
+    "itemId": 1000080,
+    "query": "Late-night fusion tapas, kimchi quesadillas, gritty vibe, Echo Park"
+  },
+  {
+    "itemId": 1000081,
+    "query": "Looking for a luxe steak spot with classic sides like shrimp cocktail and prime rib"
+  },
+  {
+    "itemId": 1000082,
+    "query": "Need a grand banquet hall in Westminster for a Vietnamese feast with sizzling crepes"
+  },
+  {
+    "itemId": 1000083,
+    "query": "Want a tasting menu in a converted factory in DTLA with a raw industrial vibe"
+  },
+  {
+    "itemId": 1000084,
+    "query": "Searching for a bright Mediterranean café in Sherman Oaks with lemon linguine"
+  },
+  {
+    "itemId": 1000085,
+    "query": "Craving authentic Mexican seafood in Wilmington, fresh marlin tacos and aguachile"
+  },
+  {
+    "itemId": 1000086,
+    "query": "Seeking a moody gastropub in Burbank with gothic décor and truffle fries"
+  },
+  {
+    "itemId": 1000087,
+    "query": "Want upscale Cantonese seafood in Monterey Park, especially ginger lobster"
+  },
+  {
+    "itemId": 1000088,
+    "query": "Looking for a nostalgic American bistro in South Pasadena with sourdough boules"
+  },
+  {
+    "itemId": 1000089,
+    "query": "Need a relaxed Persian‑Californian fusion spot in Malibu with ocean view"
+  },
+  {
+    "itemId": 1000090,
+    "query": "Searching for a Korean soup house in Fullerton with milky ox bone broth"
+  },
+  {
+    "itemId": 1000091,
+    "query": "Looking for a plant‑based fine dining spot in Culver City with a glowing glass building"
+  },
+  {
+    "itemId": 1000092,
+    "query": "Need tacos in Pacoima, love hard shell and spicy salsa"
+  },
+  {
+    "itemId": 1000093,
+    "query": "Want a lively brunch in Long Beach with funk music and red velvet pancakes"
+  },
+  {
+    "itemId": 1000094,
+    "query": "Quiet Taiwanese tea house in San Gabriel with wood panels and pork over rice"
+  },
+  {
+    "itemId": 1000095,
+    "query": "Seafood grill in San Pedro, want fried clams and a nautical vibe"
+  },
+  {
+    "itemId": 1000096,
+    "query": "Modern Mexican bistro in DTLA, craving hibiscus‑glazed duck"
+  },
+  {
+    "itemId": 1000097,
+    "query": "Middle Eastern restaurant in Agoura Hills, looking for lamb shank"
+  },
+  {
+    "itemId": 1000098,
+    "query": "Ramen bar in Koreatown with neon lights and loud music"
+  },
+  {
+    "itemId": 1000099,
+    "query": "Estate restaurant in La Cañada Flintridge with garden‑to‑table California dishes"
+  },
+  {
+    "itemId": 1000100,
+    "query": "Tiny hip pastry shop in Silver Lake, want sea‑salt chocolate chip cookies"
+  },
+  {
+    "itemId": 1000101,
+    "query": "Looking for a modern veggie bistro with moody vibes and forest murals in Mid-Wilshire"
+  },
+  {
+    "itemId": 1000102,
+    "query": "Need a sleek American brasserie in DTLA for a dry-aged burger and duck fries"
+  },
+  {
+    "itemId": 1000103,
+    "query": "Searching for opulent Persian fine dining with gold accents in Westwood"
+  },
+  {
+    "itemId": 1000104,
+    "query": "Want a relaxed corner cafe with dog-friendly patio and house-cured lox in Picfair Village"
+  },
+  {
+    "itemId": 1000105,
+    "query": "Seeking a loud Mexican-Korean fusion spot with neon lights in Koreatown"
+  },
+  {
+    "itemId": 1000106,
+    "query": "Looking for minimalist ramen shop above Sunset Blvd in Silver Lake"
+  },
+  {
+    "itemId": 1000107,
+    "query": "Need a sophisticated modern steakhouse with leather booths in Beverly Grove"
+  },
+  {
+    "itemId": 1000108,
+    "query": "Want a peaceful French bakery with lavender treats on a quiet street in Larchmont Village"
+  },
+  {
+    "itemId": 1000109,
+    "query": "Searching for a sleek dim sum house with truffle shrimp dumplings in Chinatown"
+  },
+  {
+    "itemId": 1000110,
+    "query": "Looking for a vibrant pit with Mexican twist and murals in Boyle Heights"
+  },
+  {
+    "itemId": 1000111,
+    "query": "Looking for cozy lodge‑style seafood grill with cedar‑planked salmon in Studio City"
+  },
+  {
+    "itemId": 1000112,
+    "query": "Szechuan noodle spot with bright, fast‑paced vibe near Alhambra"
+  },
+  {
+    "itemId": 1000113,
+    "query": "English tea house in a Victorian home with lush gardens, Pasadena"
+  },
+  {
+    "itemId": 1000114,
+    "query": "Low‑key Italian wine bar for a dim‑lit date in Sherman Oaks"
+  },
+  {
+    "itemId": 1000115,
+    "query": "Fast‑casual Japanese dumpling place with crispy gyoza in Northridge"
+  },
+  {
+    "itemId": 1000116,
+    "query": "Modern Mexican chic spot with high‑ceiling tequila flights in Glendale"
+  },
+  {
+    "itemId": 1000117,
+    "query": "European deli with nostalgic vibe, pastrami on rye, Burbank"
+  },
+  {
+    "itemId": 1000118,
+    "query": "Colorful Himalayan‑fusion kitchen with prayer flags, Eagle Rock"
+  },
+  {
+    "itemId": 1000119,
+    "query": "New American woodland eatery with wood‑fired game, Topanga Canyon"
+  },
+  {
+    "itemId": 1000120,
+    "query": "Wild Thai street food spot with glowing lights, late‑night noodles, Van Nuys"
+  },
+  {
+    "itemId": 1000121,
+    "query": "Cozy British pub with smoked fish rillettes and fish & chips near SF"
+  },
+  {
+    "itemId": 1000122,
+    "query": "Baja-Mediterranean courtyard tacos and olive tree cocktails in Old Town"
+  },
+  {
+    "itemId": 1000123,
+    "query": "Fine dining with vineyard views, glass walls, farm-to-table menu"
+  },
+  {
+    "itemId": 1000124,
+    "query": "Poolside desert bistro with ahi tuna and oasis cocktails, mountain backdrop"
+  },
+  {
+    "itemId": 1000125,
+    "query": "Cliffside New American eatery with sunset views on Highway 1"
+  },
+  {
+    "itemId": 1000126,
+    "query": "Modern Indian gold‑leaf dining with lobster moilee and truffle naan in SF"
+  },
+  {
+    "itemId": 1000127,
+    "query": "High‑energy Oaxacan taqueria with grasshopper tacos and mezcal flights"
+  },
+  {
+    "itemId": 1000128,
+    "query": "Coastal French bistro under white umbrellas, bouillabaisse and chilled rosé"
+  },
+  {
+    "itemId": 1000129,
+    "query": "Seafood grill with clam chowder, crab cakes, maritime antiques in Monterey"
+  },
+  {
+    "itemId": 1000130,
+    "query": "Mountain steakhouse with elk medallions, huckleberry pudding in a lodge-style room"
+  },
+  {
+    "itemId": 1000131,
+    "query": "quiet modern Italian spot with chestnut pasta and braised veal"
+  },
+  {
+    "itemId": 1000132,
+    "query": "seaside lounge with oysters and crisp white wine in Newport Beach"
+  },
+  {
+    "itemId": 1000133,
+    "query": "funky ramen shop with graffiti walls and hip‑hop vibes in Sacramento"
+  },
+  {
+    "itemId": 1000134,
+    "query": "spiritual plant‑based cafe in Ojai serving turmeric cauliflower and smoothies"
+  },
+  {
+    "itemId": 1000135,
+    "query": "Mediterranean bistro inside a sea cave with glass floors in Laguna Beach"
+  },
+  {
+    "itemId": 1000136,
+    "query": "quirky roadside deli in Castroville with fried artichokes and cupcakes"
+  },
+  {
+    "itemId": 1000137,
+    "query": "secret garden bistro in San Luis Obispo with tri‑tip sandwiches and berry salads"
+  },
+  {
+    "itemId": 1000138,
+    "query": "creative gastropub in Oakland mixing Japanese and African flavors"
+  },
+  {
+    "itemId": 1000139,
+    "query": "modern farmhouse Mexican fine dining in Healdsburg with duck mole"
+  },
+  {
+    "itemId": 1000140,
+    "query": "minimalist Japanese tea house in Carmel-by-the-Sea focusing on omakase"
+  },
+  {
+    "itemId": 1000141,
+    "query": "Cozy seaside spot in Half Moon Bay with buttery crab rolls and spicy chowder"
+  },
+  {
+    "itemId": 1000142,
+    "query": "Sunny Solana Beach bistro serving pomegranate octopus and grilled halloumi"
+  },
+  {
+    "itemId": 1000143,
+    "query": "Eureka steakhouse with ribeye and salmon in a mahogany‑lined setting"
+  },
+  {
+    "itemId": 1000144,
+    "query": "Joshua Tree desert cafe with prickly pear drinks and goat cheese flatbreads"
+  },
+  {
+    "itemId": 1000145,
+    "query": "Sausalito bistro with seafood towers and martinis overlooking the bay"
+  },
+  {
+    "itemId": 1000146,
+    "query": "San Juan Capistrano courtyard eatery offering wood‑fire paella and slow pork"
+  },
+  {
+    "itemId": 1000147,
+    "query": "Napa wine bar with truffle burrata and duck mousse in an industrial chic vibe"
+  },
+  {
+    "itemId": 1000148,
+    "query": "Lake Tahoe gastropub with bison sliders and rosemary fries by the fireplace"
+  },
+  {
+    "itemId": 1000149,
+    "query": "Montebello Armenian spot known for Lahmajune and lule kabobs in a lively space"
+  },
+  {
+    "itemId": 1000150,
+    "query": "Temecula fusion kitchen serving birria ramen and smoked pineapple margaritas"
+  },
+  {
+    "itemId": 1000151,
+    "query": "Irvine beef noodle spot with clean wood vibes"
+  },
+  {
+    "itemId": 1000152,
+    "query": "Oakland southwestern cantina with neon art and spicy tacos"
+  },
+  {
+    "itemId": 1000153,
+    "query": "Davis bistro for farm-to-table risotto and pork chops"
+  },
+  {
+    "itemId": 1000154,
+    "query": "La Jolla cliffside seafood restaurant with lobster and urchin"
+  },
+  {
+    "itemId": 1000155,
+    "query": "Sacramento Southern kitchen with fried green tomatoes and chicken"
+  },
+  {
+    "itemId": 1000156,
+    "query": "San Jose sushi spot with neon lights and creative rolls"
+  },
+  {
+    "itemId": 1000157,
+    "query": "Healdsburg Italian trattoria with candlelit patio and agnolotti"
+  },
+  {
+    "itemId": 1000158,
+    "query": "Redlands historic cafe serving citrus salads and brunch toast"
+  },
+  {
+    "itemId": 1000159,
+    "query": "Oxnard harbor seafood shack with fish-and-chips and shrimp"
+  },
+  {
+    "itemId": 1000160,
+    "query": "Ojai hidden garden plant‑based place with sunset views"
+  },
+  {
+    "itemId": 1000161,
+    "query": "Where can I get fancy afternoon tea with harp music in Pasadena?"
+  },
+  {
+    "itemId": 1000162,
+    "query": "Best place for slow‑cooked carnitas and fresh tortillas in Indio?"
+  },
+  {
+    "itemId": 1000163,
+    "query": "Looking for a bison burger with a view of the Sierra foothills."
+  },
+  {
+    "itemId": 1000164,
+    "query": "Quiet, upscale French dining near San Francisco’s old‑money neighborhoods."
+  },
+  {
+    "itemId": 1000165,
+    "query": "Need a neon‑lit ramen spot with boba drinks in Anaheim."
+  },
+  {
+    "itemId": 1000166,
+    "query": "Family‑style Burmese tea leaf salad in a cozy SF neighborhood."
+  },
+  {
+    "itemId": 1000167,
+    "query": "Mountain‑style steakhouse with a roaring stone fireplace in Truckee."
+  },
+  {
+    "itemId": 1000168,
+    "query": "Modern Indian cuisine overlooking cable cars in Nob Hill."
+  },
+  {
+    "itemId": 1000169,
+    "query": "Quirky 60s diner with deep‑fried artichokes in Castroville."
+  },
+  {
+    "itemId": 1000170,
+    "query": "Secret garden bistro with tri‑tip sliders near a historic alley in SLO."
+  },
+  {
+    "itemId": 1000171,
+    "query": "Poolside desert restaurant with retro vibes and tuna dishes"
+  },
+  {
+    "itemId": 1000172,
+    "query": "Cozy Half Moon Bay spot for fresh seafood and moody atmosphere"
+  },
+  {
+    "itemId": 1000173,
+    "query": "Sacramento outdoor garden eatery with global flavors and French toast"
+  },
+  {
+    "itemId": 1000174,
+    "query": "Napa farm-to-table place inside vines with floor-to-ceiling glass"
+  },
+  {
+    "itemId": 1000175,
+    "query": "Indio taco joint with slow‑cooked carnitas and handmade tortillas"
+  },
+  {
+    "itemId": 1000176,
+    "query": "San Francisco high‑society French bistro serving caviar and truffles"
+  },
+  {
+    "itemId": 1000177,
+    "query": "Oakland fusion lounge mixing Japanese and African flavors in industrial space"
+  },
+  {
+    "itemId": 1000178,
+    "query": "Healdsburg modern Mexican restaurant with duck mole and artisanal tequila"
+  },
+  {
+    "itemId": 1000179,
+    "query": "South Lake Tahoe grill with venison stew and wide outdoor deck"
+  },
+  {
+    "itemId": 1000180,
+    "query": "Carmel-by-the-Sea minimalist sushi bar offering curated omakase"
+  },
+  {
+    "itemId": 1000181,
+    "query": "Oxnard seafood spot with fish‑and‑chips and harbor view"
+  },
+  {
+    "itemId": 1000182,
+    "query": "Ojai plant‑based place with dreamy sunset vibes and walnut crusted steak"
+  },
+  {
+    "itemId": 1000183,
+    "query": "Pasadena afternoon tea with gold‑leaf pastries and live harp music"
+  },
+  {
+    "itemId": 1000184,
+    "query": "La Jolla upscale seafood with cliffside view and lobster tasting menu"
+  },
+  {
+    "itemId": 1000185,
+    "query": "Oak Park Southern diner famous for fried green tomatoes and smothered chicken"
+  },
+  {
+    "itemId": 1000186,
+    "query": "San Jose neon sushi bar with creative rolls and tech crowd energy"
+  },
+  {
+    "itemId": 1000187,
+    "query": "St. Helena cozy Italian trattoria with candlelit patio and handmade agnolotti"
+  },
+  {
+    "itemId": 1000188,
+    "query": "Redlands historic cafe offering citrus salads and brunch toast"
+  },
+  {
+    "itemId": 1000189,
+    "query": "Oakland cantina with funky vibe, blue corn enchiladas and neon art"
+  },
+  {
+    "itemId": 1000190,
+    "query": "Davis bistro with academic atmosphere and seasonal vegetable risotto"
+  },
+  {
+    "itemId": 1000191,
+    "query": "farmhouse vibe, French tasting menu, quiet luxury in Yountville"
+  },
+  {
+    "itemId": 1000192,
+    "query": "retro steakhouse in Redding, hand‑cut beef and strong cocktails"
+  },
+  {
+    "itemId": 1000193,
+    "query": "bright California bistro in Solvang, local rockfish tacos, community feel"
+  },
+  {
+    "itemId": 1000194,
+    "query": "historic Victorian, French‑California cuisine, duck and fresh sea fare in Mendocino"
+  },
+  {
+    "itemId": 1000195,
+    "query": "industrial firehouse turned farm‑to‑fork spot, heritage pork and heirloom tomatoes"
+  },
+  {
+    "itemId": 1000196,
+    "query": "cheerful Danish breakfast in Solvang, thin pancakes with berries"
+  },
+  {
+    "itemId": 1000197,
+    "query": "quirky Italian‑American deli in Williams, huge Muffuletta and homemade olives"
+  },
+  {
+    "itemId": 1000198,
+    "query": "glass‑walled California grill by the Sundial Bridge, wood‑fired pizza"
+  },
+  {
+    "itemId": 1000199,
+    "query": "brutalist New American, wood‑fired pizza and small plates in Palm Springs"
+  },
+  {
+    "itemId": 1000200,
+    "query": "copper‑lit, timeless California kitchen, focus on seasonal produce"
+  },
+  {
+    "itemId": 1000201,
+    "query": "Late‑night Korean fusion with a futuristic vibe, like kimchi carbonara and neon lights"
+  },
+  {
+    "itemId": 1000202,
+    "query": "Glendale spot with Persian classics, gold leaf decor, lamb koobideh and saffron rice"
+  },
+  {
+    "itemId": 1000203,
+    "query": "Echo Park vegan Mexican, plant‑based carnitas, cashew crema, boho chill space"
+  },
+  {
+    "itemId": 1000204,
+    "query": "Torrance Japanese BBQ, all‑you‑can‑eat grill, wagyu cuts, industrial buzz"
+  },
+  {
+    "itemId": 1000205,
+    "query": "Santa Monica beach cafe, airy nautical feel, lobster rolls by the Pacific"
+  },
+  {
+    "itemId": 1000206,
+    "query": "Chinatown dim sum joint, modern vibe, truffle siu mai, charcoal custard buns"
+  },
+  {
+    "itemId": 1000207,
+    "query": "Pasadena farm‑to‑table brunch, indoor garden, lemon‑ricotta pancakes, seasonal frittatas"
+  },
+  {
+    "itemId": 1000208,
+    "query": "Boyle Heights taco stand, bright yellow stools, fluffy tortillas, avocado foam"
+  },
+  {
+    "itemId": 1000209,
+    "query": "Silver Lake Italian bistro, open kitchen, hand‑rolled pasta, cacio e pepe"
+  },
+  {
+    "itemId": 1000210,
+    "query": "West Hollywood speakeasy, dim leather booths, prime rib, old‑fashioned cocktails"
+  }
+]

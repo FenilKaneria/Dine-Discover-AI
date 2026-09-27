@@ -1,0 +1,830 @@
+[
+  {
+    "itemId": 1000001,
+    "query": "Chill in a bright greenhouse vibe with creative farm-to-table meals"
+  },
+  {
+    "itemId": 1000002,
+    "query": "Beachside tacos with a salty breeze and laid-back energy"
+  },
+  {
+    "itemId": 1000003,
+    "query": "Moody industrial setting for a classic American steak feast"
+  },
+  {
+    "itemId": 1000004,
+    "query": "Zen, minimalist dining focusing on seasonal Japanese flavors"
+  },
+  {
+    "itemId": 1000005,
+    "query": "Lively spot where everyone’s talking over modern Italian dishes"
+  },
+  {
+    "itemId": 1000006,
+    "query": "Large, communal atmosphere with fresh Middle Eastern style sharing"
+  },
+  {
+    "itemId": 1000007,
+    "query": "Romantic wine bar with historic brick and small French plates"
+  },
+  {
+    "itemId": 1000008,
+    "query": "Funky neon-lit spot for spicy street noodles and bold flavors"
+  },
+  {
+    "itemId": 1000009,
+    "query": "Chill patio brunch with people‑watching umbrellas and relaxed vibes"
+  },
+  {
+    "itemId": 1000010,
+    "query": "Vibrant Southern fusion spot with a soulful, welcoming feel"
+  },
+  {
+    "itemId": 1000011,
+    "query": "Looking for a tropical vibe with breezy, lush dining and fresh vibes"
+  },
+  {
+    "itemId": 1000012,
+    "query": "Want a breezy seaside Italian dinner with upscale coastal feel"
+  },
+  {
+    "itemId": 1000013,
+    "query": "Searching for a colorful family spot with lively community energy"
+  },
+  {
+    "itemId": 1000014,
+    "query": "Need a nostalgic, dimly lit supper club with plush booths"
+  },
+  {
+    "itemId": 1000015,
+    "query": "Craving a high‑energy, industrial Korean grill spot for a night out"
+  },
+  {
+    "itemId": 1000016,
+    "query": "Seeking a hidden garden café with relaxed Eastern Mediterranean feel"
+  },
+  {
+    "itemId": 1000017,
+    "query": "Looking for a loud, crunchy fried chicken joint with vinyl vibes"
+  },
+  {
+    "itemId": 1000018,
+    "query": "Want a quiet, experimental Japanese tasting room far from the city"
+  },
+  {
+    "itemId": 1000019,
+    "query": "Searching for a sun‑soaked, plant‑based gastropub weekend hangout"
+  },
+  {
+    "itemId": 1000020,
+    "query": "Need a warm, sophisticated modern Indian spot with copper accents"
+  },
+  {
+    "itemId": 1000021,
+    "query": "Looking for a cozy, candlelit dinner with a family vibe and a relaxed Italian feel."
+  },
+  {
+    "itemId": 1000022,
+    "query": "Want a sultry, dim-lit evening with small plates and a hidden patio vibe."
+  },
+  {
+    "itemId": 1000023,
+    "query": "Seeking an opulent, regal dining room with Persian flavors and intricate décor."
+  },
+  {
+    "itemId": 1000024,
+    "query": "Craving a high-ceilinged, energetic brunch spot with creative comfort food."
+  },
+  {
+    "itemId": 1000025,
+    "query": "Need a bustling, traditional dim sum place for weekend gatherings."
+  },
+  {
+    "itemId": 1000026,
+    "query": "Looking for a casual oceanfront spot with a relaxed beach vibe."
+  },
+  {
+    "itemId": 1000027,
+    "query": "Want a humble, friendly dining room with a Sunday afternoon feel."
+  },
+  {
+    "itemId": 1000028,
+    "query": "Seeking a trendy, neon-lit lounge with a sleek modern vibe."
+  },
+  {
+    "itemId": 1000029,
+    "query": "Looking for a festive, colorful cantina with a lively celebration atmosphere."
+  },
+  {
+    "itemId": 1000030,
+    "query": "Want a serene new American dining experience tucked away in the canyon."
+  },
+  {
+    "itemId": 1000031,
+    "query": "Looking for a calm, modern spot with a clean vibe and bold flavors."
+  },
+  {
+    "itemId": 1000032,
+    "query": "Want a no-frills dockside meal with fresh seafood and hearty bread."
+  },
+  {
+    "itemId": 1000033,
+    "query": "Need a bright, airy vegan place with a relaxed, sunlit atmosphere."
+  },
+  {
+    "itemId": 1000034,
+    "query": "Craving a lively, family‑style Italian spot with bustling energy."
+  },
+  {
+    "itemId": 1000035,
+    "query": "Seeking a sophisticated tea house with a jewel‑tinted, elegant feel."
+  },
+  {
+    "itemId": 1000036,
+    "query": "Want a festive Mexican lounge under a colorful paper canopy."
+  },
+  {
+    "itemId": 1000037,
+    "query": "Looking for a high‑energy, neon‑lit Korean‑American gastropub."
+  },
+  {
+    "itemId": 1000038,
+    "query": "Need a cozy, rustic smokehouse with a cabin‑like fireplace."
+  },
+  {
+    "itemId": 1000039,
+    "query": "Want a bustling South Indian vegetarian spot with a gold‑accented vibe."
+  },
+  {
+    "itemId": 1000040,
+    "query": "Looking for a retro‑futuristic diner with 1950s‑style vibes."
+  },
+  {
+    "itemId": 1000041,
+    "query": "Cozy sidewalk spot with a quiet European vibe"
+  },
+  {
+    "itemId": 1000042,
+    "query": "Industrial warehouse with smoky barbecue and spicy pickles"
+  },
+  {
+    "itemId": 1000043,
+    "query": "Quiet lunch place for business meals with clean décor"
+  },
+  {
+    "itemId": 1000044,
+    "query": "Nighttime street-food feel in a stylish, moody setting"
+  },
+  {
+    "itemId": 1000045,
+    "query": "Fast, minimalist Japanese dumpling spot with efficient service"
+  },
+  {
+    "itemId": 1000046,
+    "query": "Refined nautical lounge with harbor views and a raw bar"
+  },
+  {
+    "itemId": 1000047,
+    "query": "Bright, sugary dessert cafe for weekend treats"
+  },
+  {
+    "itemId": 1000048,
+    "query": "Loud beer hall with communal tables and festive atmosphere"
+  },
+  {
+    "itemId": 1000049,
+    "query": "Private, opulent dining room with a hushed, exclusive feel"
+  },
+  {
+    "itemId": 1000050,
+    "query": "High-energy spot for quick, funky Asian-style noodle bowls"
+  },
+  {
+    "itemId": 1000051,
+    "query": "Looking for a cozy, upscale spot with a big open-fire grill and velvet booths"
+  },
+  {
+    "itemId": 1000052,
+    "query": "Want a quirky, steam-filled ramen joint with a long, comforting broth"
+  },
+  {
+    "itemId": 1000053,
+    "query": "Searching for a relaxed, white-washed patio vibe with Mediterranean flavors"
+  },
+  {
+    "itemId": 1000054,
+    "query": "Need a sleek, modern Chinese BBQ place with a polished atmosphere"
+  },
+  {
+    "itemId": 1000055,
+    "query": "Craving a breezy, chic coastal spot that mixes bold flavors and healthy vibes"
+  },
+  {
+    "itemId": 1000056,
+    "query": "Want a quiet, bookish wine bar for long chats and local food pairings"
+  },
+  {
+    "itemId": 1000057,
+    "query": "Looking for a rowdy, rustic pub with high ceilings and loud music"
+  },
+  {
+    "itemId": 1000058,
+    "query": "Need a bright, family-run kitchen that focuses on hearty comfort foods"
+  },
+  {
+    "itemId": 1000059,
+    "query": "Seeking a peaceful sidewalk cafe with refined drinks and quiet locals"
+  },
+  {
+    "itemId": 1000060,
+    "query": "Want a lively, colorful taqueria with a bustling atmosphere"
+  },
+  {
+    "itemId": 1000061,
+    "query": "Looking for a glam night with theatrical vibes and luxe décor"
+  },
+  {
+    "itemId": 1000062,
+    "query": "Need a bright, healthy lunch spot with plant‑based options"
+  },
+  {
+    "itemId": 1000063,
+    "query": "Want a neon‑lit night market feel with energetic street food"
+  },
+  {
+    "itemId": 1000064,
+    "query": "Craving a moody late‑night dinner in a high‑ceilinged space"
+  },
+  {
+    "itemId": 1000065,
+    "query": "Searching for a quiet, nostalgic club atmosphere with classic service"
+  },
+  {
+    "itemId": 1000066,
+    "query": "Want a trendy spot with local art and upbeat indie music"
+  },
+  {
+    "itemId": 1000067,
+    "query": "Looking for a relaxed beach shack vibe with picnic tables"
+  },
+  {
+    "itemId": 1000068,
+    "query": "Need a light‑filled Middle Eastern grill with earthy accents"
+  },
+  {
+    "itemId": 1000069,
+    "query": "Want a bright, over‑the‑top dessert place for a celebration"
+  },
+  {
+    "itemId": 1000070,
+    "query": "Seeking a dim‑lit soulful spot with live jazz and cozy ambiance"
+  },
+  {
+    "itemId": 1000071,
+    "query": "Retro vibe, quirky mid-century decor, creative American dishes, artistic neighborhood feel"
+  },
+  {
+    "itemId": 1000072,
+    "query": "Cozy wood-scented space, thin crust pizza, seasonal toppings, neighborly warmth"
+  },
+  {
+    "itemId": 1000073,
+    "query": "Romantic cliffside setting, exclusive atmosphere, fresh ocean flavors, sunset views"
+  },
+  {
+    "itemId": 1000074,
+    "query": "Minimalist space, quiet atmosphere, hand-pulled noodles, simple yet bold flavors"
+  },
+  {
+    "itemId": 1000076,
+    "query": "Farmhouse feel, communal tables, wood smoke aroma, modern American comfort"
+  },
+  {
+    "itemId": 1000077,
+    "query": "Serene traditional setting, authentic Japanese feel, quiet and sincere"
+  },
+  {
+    "itemId": 1000078,
+    "query": "Late-night electric vibe, eclectic tapas, indie spirit, gritty energy"
+  },
+  {
+    "itemId": 1000079,
+    "query": "Scenic vineyard backdrop, upscale Italian dining, celebratory weekend escape"
+  },
+  {
+    "itemId": 1000080,
+    "query": "Bright minimalist space, vibrant Mexican street food, energetic atmosphere"
+  },
+  {
+    "itemId": 1000081,
+    "query": "Looking for a quiet, upscale dinner vibe with a touch of old Hollywood."
+  },
+  {
+    "itemId": 1000082,
+    "query": "Want a lively banquet setting for a big celebration with a bustling atmosphere."
+  },
+  {
+    "itemId": 1000083,
+    "query": "Searching for a tasting menu in a raw, industrial loft with creative twists."
+  },
+  {
+    "itemId": 1000084,
+    "query": "Need a bright patio brunch spot with sunny vibes and Mediterranean flavors."
+  },
+  {
+    "itemId": 1000085,
+    "query": "Craving a gritty, authentic Mexican seafood spot with fresh, no-nonsense food."
+  },
+  {
+    "itemId": 1000087,
+    "query": "Looking for a sophisticated Cantonese seafood place with modern, light-filled décor."
+  },
+  {
+    "itemId": 1000088,
+    "query": "Want a cozy, nostalgic bakery‑bistro vibe reminiscent of a 1920s general store."
+  },
+  {
+    "itemId": 1000089,
+    "query": "Searching for a relaxed, bohemian patio with ocean views and aromatic jasmine."
+  },
+  {
+    "itemId": 1000090,
+    "query": "Need a simple, clean Korean soup house focused on hearty, soul‑warming broths."
+  },
+  {
+    "itemId": 1000091,
+    "query": "Looking for a glowing glass space with modern plant‑based vibes"
+  },
+  {
+    "itemId": 1000092,
+    "query": "Want a mural‑decorated spot with lively, simple Mexican food"
+  },
+  {
+    "itemId": 1000093,
+    "query": "Need a loud brunch place with funky music and bright art"
+  },
+  {
+    "itemId": 1000094,
+    "query": "Searching for a quiet wood‑panelled tea house with refined Taiwanese dishes"
+  },
+  {
+    "itemId": 1000095,
+    "query": "Craving a nautical grill with weathered charm and fresh fish"
+  },
+  {
+    "itemId": 1000096,
+    "query": "Want a modern Mexican bistro with artistic flair and fresh tortillas"
+  },
+  {
+    "itemId": 1000097,
+    "query": "Looking for an upscale Middle Eastern spot with calm, refined atmosphere"
+  },
+  {
+    "itemId": 1000098,
+    "query": "Need a high‑energy ramen bar with neon lights and metal vibes"
+  },
+  {
+    "itemId": 1000099,
+    "query": "Searching for a garden‑to‑table estate with mountain views"
+  },
+  {
+    "itemId": 1000100,
+    "query": "Want a tiny hip spot for pastries and coffee with a cozy vibe"
+  },
+  {
+    "itemId": 1000101,
+    "query": "Looking for a cozy, dimly lit spot with a forest vibe and chill atmosphere."
+  },
+  {
+    "itemId": 1000102,
+    "query": "Want a sleek, glass-walled place for a relaxed lunch that turns into happy hour."
+  },
+  {
+    "itemId": 1000103,
+    "query": "Searching for a regal, gold‑lit dining room with a luxurious, aromatic vibe."
+  },
+  {
+    "itemId": 1000104,
+    "query": "Need a laid‑back corner cafe with a dog‑friendly patio and neighborhood feel."
+  },
+  {
+    "itemId": 1000105,
+    "query": "Craving a loud, neon‑lit spot that mixes Mexican and Korean energy."
+  },
+  {
+    "itemId": 1000106,
+    "query": "Looking for a minimalist noodle shop with bright, wood‑clad walls and people‑watching."
+  },
+  {
+    "itemId": 1000107,
+    "query": "Want a masculine, sophisticated steakhouse with dark leather booths."
+  },
+  {
+    "itemId": 1000108,
+    "query": "Searching for a peaceful sidewalk bakery with a picnic vibe and quiet mornings."
+  },
+  {
+    "itemId": 1000109,
+    "query": "Need a moody, dark‑wood dim sum house hidden away from the tourist crowds."
+  },
+  {
+    "itemId": 1000110,
+    "query": "Looking for a vibrant, mural‑covered pit spot with a soulful, colorful vibe."
+  },
+  {
+    "itemId": 1000111,
+    "query": "Cozy lodge vibe with fresh ocean flavors, perfect for a relaxed night out"
+  },
+  {
+    "itemId": 1000112,
+    "query": "Fast, spicy noodle spot with nonstop energy and bold flavors"
+  },
+  {
+    "itemId": 1000113,
+    "query": "Elegant tea house in a historic garden, ideal for a quiet afternoon"
+  },
+  {
+    "itemId": 1000114,
+    "query": "Dim-lit Italian bar with a sultry atmosphere for a low-key date"
+  },
+  {
+    "itemId": 1000115,
+    "query": "Bright, speedy spot for tasty dumplings in a clean, modern setting"
+  },
+  {
+    "itemId": 1000116,
+    "query": "Chic Mexican place with airy decor and upscale tequila selections"
+  },
+  {
+    "itemId": 1000117,
+    "query": "Nostalgic neighborhood bakery with hearty deli classics"
+  },
+  {
+    "itemId": 1000118,
+    "query": "Colorful Himalayan-inspired kitchen with aromatic spices and prayer flags"
+  },
+  {
+    "itemId": 1000119,
+    "query": "Mystical woodland setting with wood-fired dishes and foraged ingredients"
+  },
+  {
+    "itemId": 1000120,
+    "query": "High-energy street noodle joint with neon lights and late-night vibes"
+  },
+  {
+    "itemId": 1000121,
+    "query": "Looking for a cozy, moody spot with a fireplace and ocean vibe for a quiet night out."
+  },
+  {
+    "itemId": 1000122,
+    "query": "Want a sunny courtyard with olive trees and relaxed Mediterranean feel for a casual dinner."
+  },
+  {
+    "itemId": 1000123,
+    "query": "Searching for a glass-walled room inside a vineyard for a sophisticated, nature-inspired meal."
+  },
+  {
+    "itemId": 1000124,
+    "query": "Need a poolside bistro with a retro vibe and mountain views for a relaxed evening."
+  },
+  {
+    "itemId": 1000125,
+    "query": "Want a rugged cliffside spot with sunset views for a contemplative New American dinner."
+  },
+  {
+    "itemId": 1000126,
+    "query": "Looking for a quiet, gold‑accented room with city sounds for a modern Indian experience."
+  },
+  {
+    "itemId": 1000127,
+    "query": "Searching for a high‑energy spot with colorful murals and lively drinks for a night out."
+  },
+  {
+    "itemId": 1000128,
+    "query": "Need a breezy outdoor bistro under white umbrellas for a relaxed coastal French feel."
+  },
+  {
+    "itemId": 1000129,
+    "query": "Looking for a maritime‑themed dining room with harbor views for a classic seafood night."
+  },
+  {
+    "itemId": 1000130,
+    "query": "Want a warm lodge‑style steakhouse with a stone hearth for a hearty mountain meal."
+  },
+  {
+    "itemId": 1000131,
+    "query": "Looking for a quiet, candlelit spot with polished service and a refined vibe"
+  },
+  {
+    "itemId": 1000132,
+    "query": "Need a chic nautical lounge with navy velvet and a yacht view"
+  },
+  {
+    "itemId": 1000133,
+    "query": "Want a funky, high‑energy ramen spot with local graffiti"
+  },
+  {
+    "itemId": 1000134,
+    "query": "Searching for a spiritual, rustic garden cafe with floor cushions"
+  },
+  {
+    "itemId": 1000135,
+    "query": "Looking for an upscale Mediterranean place inside a sea cave"
+  },
+  {
+    "itemId": 1000136,
+    "query": "Need a quirky, historic roadside deli with a 60s vibe"
+  },
+  {
+    "itemId": 1000137,
+    "query": "Want a secret garden bistro with ivy, fountain sounds"
+  },
+  {
+    "itemId": 1000138,
+    "query": "Looking for a creative gastropub in reclaimed industrial space"
+  },
+  {
+    "itemId": 1000139,
+    "query": "Need a breezy, upscale Mexican spot with modern farmhouse style"
+  },
+  {
+    "itemId": 1000140,
+    "query": "Searching for a silent, minimalist Japanese tea house with curated omakase"
+  },
+  {
+    "itemId": 1000141,
+    "query": "Cozy seaside spot with rustic vibes and hearty seafood vibes"
+  },
+  {
+    "itemId": 1000142,
+    "query": "Sunny lunch spot with relaxed vibe and Mediterranean-inspired dishes"
+  },
+  {
+    "itemId": 1000143,
+    "query": "Classic steakhouse with vintage feel and premium cuts"
+  },
+  {
+    "itemId": 1000144,
+    "query": "Minimalist desert cafe with calm patio and creative dishes"
+  },
+  {
+    "itemId": 1000145,
+    "query": "Elegant bistro with waterfront view and upscale dining atmosphere"
+  },
+  {
+    "itemId": 1000146,
+    "query": "Historic courtyard eatery with warm lights and rustic Spanish flavors"
+  },
+  {
+    "itemId": 1000147,
+    "query": "Moody wine bar with industrial chic and quiet retreat vibe"
+  },
+  {
+    "itemId": 1000148,
+    "query": "Lively mountain pub with big fireplaces and casual crowd"
+  },
+  {
+    "itemId": 1000149,
+    "query": "Community bakery and grill with lively white‑tablecloth setting"
+  },
+  {
+    "itemId": 1000150,
+    "query": "Sleek fusion kitchen with modern industrial style and bold flavors"
+  },
+  {
+    "itemId": 1000151,
+    "query": "Looking for a quiet, modern spot with simple, efficient vibes for a quick meal"
+  },
+  {
+    "itemId": 1000152,
+    "query": "Want a lively, funky place with bright neon and bold, casual food"
+  },
+  {
+    "itemId": 1000153,
+    "query": "Searching for an airy, bright bistro where conversation flows and food feels fresh"
+  },
+  {
+    "itemId": 1000154,
+    "query": "Need an opulent, romantic dinner spot with a stunning ocean view"
+  },
+  {
+    "itemId": 1000155,
+    "query": "Craving a warm, homey Southern kitchen with a cheerful, yellow decor"
+  },
+  {
+    "itemId": 1000156,
+    "query": "Want a loud, neon-lit sushi spot with creative twists for a tech crowd"
+  },
+  {
+    "itemId": 1000157,
+    "query": "Looking for an intimate patio with candlelight and vineyard surroundings"
+  },
+  {
+    "itemId": 1000158,
+    "query": "Searching for a quaint café with historic charm and high ceilings"
+  },
+  {
+    "itemId": 1000159,
+    "query": "Need a no-nonsense seafood shack right on the harbor with picnic tables"
+  },
+  {
+    "itemId": 1000160,
+    "query": "Craving a hidden garden dinner with mountain sunsets and plant-based dishes"
+  },
+  {
+    "itemId": 1000161,
+    "query": "Looking for a fancy afternoon tea spot with chandeliers and live music"
+  },
+  {
+    "itemId": 1000162,
+    "query": "Need a colorful, cool place to escape the desert heat for casual Mexican food"
+  },
+  {
+    "itemId": 1000163,
+    "query": "Want a rugged lodge vibe with mountain views and hearty burgers"
+  },
+  {
+    "itemId": 1000164,
+    "query": "Searching for a quiet, upscale French dinner in a muted, elegant setting"
+  },
+  {
+    "itemId": 1000165,
+    "query": "Craving a bright, energetic spot for fusion noodles and colorful drinks"
+  },
+  {
+    "itemId": 1000166,
+    "query": "Looking for a cozy family-friendly Burmese place with warm, golden decor"
+  },
+  {
+    "itemId": 1000167,
+    "query": "Want a rustic steakhouse with a roaring fireplace and pine beams"
+  },
+  {
+    "itemId": 1000168,
+    "query": "Need a chic modern Indian spot with gold accents and a quiet atmosphere"
+  },
+  {
+    "itemId": 1000169,
+    "query": "Searching for a nostalgic roadside deli with quirky 60s vibes"
+  },
+  {
+    "itemId": 1000171,
+    "query": "Poolside chill vibe with retro vibes and a sunset view"
+  },
+  {
+    "itemId": 1000172,
+    "query": "Cozy wood walls, waves in the background, a quiet night out"
+  },
+  {
+    "itemId": 1000173,
+    "query": "Garden escape in the city, bright colors and global flavors"
+  },
+  {
+    "itemId": 1000174,
+    "query": "Vineyard dining, glass walls, feel like part of the landscape"
+  },
+  {
+    "itemId": 1000175,
+    "query": "Cool shade in the desert, bright colors and lively atmosphere"
+  },
+  {
+    "itemId": 1000176,
+    "query": "Quiet upscale dining, muted tones and refined elegance"
+  },
+  {
+    "itemId": 1000177,
+    "query": "Industrial chic spot with bold, creative energy"
+  },
+  {
+    "itemId": 1000178,
+    "query": "Modern farmhouse feel with city sophistication and rustic charm"
+  },
+  {
+    "itemId": 1000179,
+    "query": "High ceilings, deck, family-friendly grill vibe"
+  },
+  {
+    "itemId": 1000180,
+    "query": "Zen minimalist setting with ocean views and quiet focus"
+  },
+  {
+    "itemId": 1000181,
+    "query": "Beachside casual spot with live fishing vibe and relaxed picnic vibe"
+  },
+  {
+    "itemId": 1000182,
+    "query": "Outdoor garden dinner under dreamy sunset glow with ethereal atmosphere"
+  },
+  {
+    "itemId": 1000183,
+    "query": "Victorian afternoon tea with chandeliers, live harp, and theatrical elegance"
+  },
+  {
+    "itemId": 1000184,
+    "query": "Romantic cliffside dining with ocean view and upscale seafood tasting menu"
+  },
+  {
+    "itemId": 1000185,
+    "query": "Cozy yellow-walled Southern comfort food in a neighborhood staple"
+  },
+  {
+    "itemId": 1000186,
+    "query": "Neon-lit fusion spot for tech crowd with creative sushi and lively energy"
+  },
+  {
+    "itemId": 1000187,
+    "query": "Intimate candlelit patio with slow‑food Italian vibe and rustic charm"
+  },
+  {
+    "itemId": 1000188,
+    "query": "Historic cafe with soaring ceilings, quirky brunch, and old‑world charm"
+  },
+  {
+    "itemId": 1000189,
+    "query": "Vibrant cantina with vintage neon and funky Southwestern flair"
+  },
+  {
+    "itemId": 1000190,
+    "query": "Bright airy bistro with intellectual conversation and seasonal farm‑to‑table dishes"
+  },
+  {
+    "itemId": 1000191,
+    "query": "Cozy farmhouse dinner, small intimate table, quiet luxury vibes"
+  },
+  {
+    "itemId": 1000192,
+    "query": "Retro steakhouse, dim wood walls, classic American vibe"
+  },
+  {
+    "itemId": 1000193,
+    "query": "Bright community bistro, seasonal California dishes, casual vibe"
+  },
+  {
+    "itemId": 1000194,
+    "query": "Historic Victorian charm, warm coastal elegance, refined dining"
+  },
+  {
+    "itemId": 1000195,
+    "query": "Industrial firehouse turned upscale, farm-to-table focus"
+  },
+  {
+    "itemId": 1000196,
+    "query": "Cheerful cottage breakfast spot, lively family atmosphere"
+  },
+  {
+    "itemId": 1000197,
+    "query": "Quirky deli vibes, eclectic lounge, Italian-American comfort"
+  },
+  {
+    "itemId": 1000198,
+    "query": "Glass-walled river view, sophisticated California grill"
+  },
+  {
+    "itemId": 1000199,
+    "query": "Brutalist theater space, high-concept New American cuisine"
+  },
+  {
+    "itemId": 1000200,
+    "query": "Warm copper-lit kitchen, timeless California fare"
+  },
+  {
+    "itemId": 1000201,
+    "query": "Late night, neon glow, high‑energy vibe, modern twist on Asian flavors"
+  },
+  {
+    "itemId": 1000202,
+    "query": "Quiet, elegant setting with gold accents, refined traditional cuisine"
+  },
+  {
+    "itemId": 1000203,
+    "query": "Boho‑chic, sunlit space, plant‑based Mexican style, relaxed atmosphere"
+  },
+  {
+    "itemId": 1000204,
+    "query": "Industrial grill‑house, group cooking, high‑energy, all‑you‑can‑eat vibe"
+  },
+  {
+    "itemId": 1000205,
+    "query": "Beachfront café, airy nautical feel, casual seaside dining"
+  },
+  {
+    "itemId": 1000206,
+    "query": "Modern, fast‑paced, communal dining, bright red accents, dim sum focus"
+  },
+  {
+    "itemId": 1000207,
+    "query": "Indoor garden brunch, light‑filled, seasonal vegetable emphasis, serene escape"
+  },
+  {
+    "itemId": 1000208,
+    "query": "Bright yellow, outdoor‑focused fast‑food, high‑concept Mexican flavor"
+  },
+  {
+    "itemId": 1000209,
+    "query": "Intimate, minimalist bistro, open kitchen, handcrafted pasta experience"
+  },
+  {
+    "itemId": 1000210,
+    "query": "Moody, romantic speakeasy, dim candlelight, live jazz nights"
+  }
+]

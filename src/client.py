@@ -1,13 +1,11 @@
 # Libraries for MCP client, LLM handling, and async operations
 import asyncio
 import json
-import logging
 import os
 import sys
 from pathlib import Path
 from typing import Any
 
-from dotenv import load_dotenv
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 from mcp.shared.context import RequestContext
@@ -21,9 +19,9 @@ from mcp.types import (
     INTERNAL_ERROR,
 )
 
-# Load .env from the project root before anything reads os.environ
-logging.getLogger("dotenv.main").setLevel(logging.ERROR)
-load_dotenv(Path(__file__).parent.parent / ".env")
+# config loads .env and holds the Groq / model settings
+sys.path.insert(0, str(Path(__file__).parent))
+from config import CHAT_MODEL, groq_client  # noqa: E402
 
 # Configuration
 SERVER_SCRIPT = str(Path(__file__).parent / "server.py")
@@ -57,9 +55,7 @@ async def handle_sampling(
     try:
         # The OpenAI client is built lazily so this script still runs the
         # tool demos when no API key is configured.
-        from openai import OpenAI
-
-        openai_client = OpenAI()
+        openai_client = groq_client()
 
         # Extract the prompt text from the first sampling message
         content = params.messages[0].content
@@ -68,7 +64,7 @@ async def handle_sampling(
         print("\n[Sampling] Server requested LLM task:")
         print(f"  Prompt preview: {prompt[:150]}...")
 
-        model_name = os.environ.get("MODEL_NAME", "gpt-4o-mini")
+        model_name = CHAT_MODEL
         response = openai_client.chat.completions.create(
             model=model_name,
             max_tokens=params.maxTokens or 200,
@@ -119,13 +115,18 @@ async def verify_connection(session: ClientSession) -> None:
     # list_tools() sends a "tools/list" JSON-RPC request to the server
     tools_result = await session.list_tools()
     tool_names = [tool.name for tool in tools_result.tools]
-    print("--- START SCREENSHOT ---")
     print(f"\nDiscovered {len(tool_names)} tools:")
     for tool in tools_result.tools:
         description = (tool.description or "").replace("\n", " ")
         print(f"  - {tool.name}: {description[:80]}...")
 
-    for required in ("get_restaurant_info", "recommend_by_vibe", "get_review"):
+    for required in (
+        "get_restaurant_info",
+        "recommend_by_vibe",
+        "get_review",
+        "search_knowledge_base",
+        "search_images",
+    ):
         assert required in tool_names, f"FAIL: {required} not found!"
     print("\nAll required tools verified!")
 
@@ -140,7 +141,6 @@ async def verify_connection(session: ClientSession) -> None:
     for root in roots:
         print(f"  - {root.name}: {root.uri}")
 
-    print("--- END SCREENSHOT ---")
 
 
 # DEMOS — Call each tool through the MCP protocol
@@ -155,17 +155,40 @@ async def demo_get_restaurant_info(session: ClientSession) -> None:
 
 
 async def demo_recommend_by_vibe(session: ClientSession) -> None:
-    """Demo: Find restaurants by vibe keyword."""
+    """Demo: Hybrid RAG recommendation with a filter."""
     print("\n" + "-" * 60)
-    print("Demo: recommend_by_vibe('moody')")
+    print("Demo: recommend_by_vibe('moody date night', max_price=3)")
     print("-" * 60)
 
-    data = await call_tool(session, "recommend_by_vibe", {"vibe": "moody"})
-    print(f"Vibe: {data.get('vibe_searched')}")
-    print(f"Total matches: {data.get('match_count', 0)}")
-    for match in data.get("structured_matches", []):
-        print(f"  - {match['name']} ({match['cuisine']}) - {match['rating']}/5 in {match['location']}")
-    print(f"Raw text excerpts: {len(data.get('raw_text_excerpts', []))}")
+    data = await call_tool(session, "recommend_by_vibe", {"vibe": "moody date night", "max_price": 3})
+    print(f"Query: {data.get('query')}  |  Retrieval: {data.get('retrieval')}")
+    for match in data.get("results", []):
+        print(
+            f"  - {match['name']} ({match['cuisine']}) - {match['rating']}/5, "
+            f"{match['price_range']} in {match['location']}"
+        )
+
+
+async def demo_search_knowledge_base(session: ClientSession) -> None:
+    """Demo: Semantic search over culinary-map prose and reviews."""
+    print("\n" + "-" * 60)
+    print("Demo: search_knowledge_base('dining room full of plants and greenery')")
+    print("-" * 60)
+
+    data = await call_tool(session, "search_knowledge_base", {"query": "dining room full of plants and greenery"})
+    for passage in data.get("passages", []):
+        print(f"  - [{passage['source']}] {passage['restaurant']} (sim {passage['similarity']})")
+
+
+async def demo_search_images(session: ClientSession) -> None:
+    """Demo: Text-to-image search with jina-clip-v2."""
+    print("\n" + "-" * 60)
+    print("Demo: search_images('bowl of ramen with a soft-boiled egg')")
+    print("-" * 60)
+
+    data = await call_tool(session, "search_images", {"query": "bowl of ramen with a soft-boiled egg"})
+    for image in data.get("images", []):
+        print(f"  - {image['name']} (sim {image['similarity']}): {image['uri']}")
 
 
 async def demo_get_review(session: ClientSession) -> None:
@@ -195,6 +218,8 @@ async def main() -> int:
                 await demo_get_restaurant_info(session)
                 await demo_recommend_by_vibe(session)
                 await demo_get_review(session)
+                await demo_search_knowledge_base(session)
+                await demo_search_images(session)
 
         print("\nAll MCP demos completed successfully.")
         return 0

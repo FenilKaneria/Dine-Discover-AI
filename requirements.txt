@@ -1,10 +1,19 @@
-gradio>=4.44
-mcp>=1.9
-langchain-openai>=0.2
-langchain-core>=0.3
-openai>=1.40
-pydantic>=2
-python-dotenv>=1.0
+# Upper bounds stop a future major release from silently breaking the app
+# (e.g. Gradio's Chatbot/Blocks APIs). Tested with the versions noted.
+gradio>=5.0,<6          # tested 5.50.0
+mcp>=1.9,<2             # tested 1.28.1
+langchain-openai>=0.2,<2  # tested 1.3.2
+langchain-core>=0.3,<2  # tested 1.4.8
+openai>=1.40,<3         # tested 2.28.0
+pydantic>=2,<3          # tested 2.13.4
+python-dotenv>=1.0,<2   # tested 1.2.2
+
+# RAG stack
+chromadb>=1.0,<2        # tested 1.5.9  (vector database)
+rank-bm25>=0.2,<0.3     # tested 0.2.2  (sparse retrieval)
+numpy>=1.26,<3          # tested 2.3.4
+requests>=2.31,<3       # tested 2.32.5 (Jina embeddings API)
+pillow>=10,<12          # tested 11.3.0 (image preprocessing for jina-clip-v2)
 
 # Optional: the standalone FastMCP package. src/server.py uses it when installed
 # and otherwise falls back to the FastMCP copy bundled inside the `mcp` SDK,

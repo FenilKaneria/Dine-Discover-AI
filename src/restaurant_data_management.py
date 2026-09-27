@@ -1,7 +1,6 @@
 import argparse
 import io
 import json
-import logging
 import os
 import shutil
 import sys
@@ -10,12 +9,11 @@ from pathlib import Path
 from typing import List, Optional
 from unittest.mock import patch
 
-from dotenv import load_dotenv
 from pydantic import BaseModel, Field, ValidationError
 
-# Load .env from the project root before anything reads os.environ
-logging.getLogger("dotenv.main").setLevel(logging.ERROR)
-load_dotenv(Path(__file__).parent.parent / ".env")
+# config loads .env and holds the Groq / model settings
+sys.path.insert(0, str(Path(__file__).parent))
+from config import CHAT_MODEL, GROQ_API_KEY, groq_client  # noqa: E402
 
 FILEPATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'processed', 'structured_restaurant_data.json')
 BACKUP_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'processed', 'structured_restaurant_data.json.bak')
@@ -32,7 +30,7 @@ EXAMPLE_RESTAURANT_PARAGRAPH = (
     'spot for open-air dining near the pier. Price range: $'
 )
 EXAMPLE_OUTPUT = """
-    {{
+    {
     "name": "Mar de Cortez",
     "location": "Santa Monica",
     "type": "casual taqueria",
@@ -46,7 +44,7 @@ EXAMPLE_OUTPUT = """
     "vibe": "salt-air energy",
     "environment": "a premier sun-drenched spot for open-air dining near the pier.",
     "shortcomings": []
-    }}
+    }
 """
 
 
@@ -136,15 +134,13 @@ def restaurant_data_structure_prompt_generation(restaurant_paragraph):
 def llm_model(system_msg, prompt_txt, params=None):
     # Imported and constructed lazily so this module can be imported (and its
     # tests run) without an API key present.
-    from openai import OpenAI
-
-    if not os.environ.get("OPENAI_API_KEY") and not os.environ.get("OPENAI_API_BASE"):
+    if not GROQ_API_KEY:
         raise RuntimeError(
-            "OPENAI_API_KEY is not set. Add it to the .env file in the project root "
+            "GROQ_API_KEY is not set. Add it to the .env file in the project root "
             "before adding restaurants (this step calls the LLM)."
         )
 
-    client = OpenAI()
+    client = groq_client()
 
     messages = [
         {"role": "system", "content": system_msg},
@@ -152,7 +148,7 @@ def llm_model(system_msg, prompt_txt, params=None):
     ]
 
     response = client.chat.completions.create(
-        model=os.environ.get("MODEL_NAME", "gpt-4o-mini"),
+        model=CHAT_MODEL,
         messages=messages,
         temperature=params.get("temperature", 0.7) if params else 0.7
     )
@@ -219,8 +215,10 @@ def new_data_entry_process(paragraph, itemId):
         prompt_txt=base_user_prompt,
     )
 
+    # One initial attempt plus MAX_REPAIR_ATTEMPTS repairs; every LLM output,
+    # including the last repair, is validated before giving up.
     last_error = None
-    for _ in range(MAX_REPAIR_ATTEMPTS):
+    for attempt in range(MAX_REPAIR_ATTEMPTS + 1):
         try:
             restaurant_data = Restaurant.model_validate_json(
                 strip_code_fences(candidate_json_output)
@@ -230,6 +228,8 @@ def new_data_entry_process(paragraph, itemId):
             return result
         except ValidationError as e:
             last_error = e
+            if attempt == MAX_REPAIR_ATTEMPTS:
+                break
             auto_repair_system_msg, auto_repair_prompt = JSON_auto_repair_prompts(
                 candidate_json_output, e.json()
             )
@@ -239,9 +239,16 @@ def new_data_entry_process(paragraph, itemId):
             )
 
     raise ValueError(
-        f"Could not produce valid restaurant JSON after {MAX_REPAIR_ATTEMPTS} attempts. "
+        f"Could not produce valid restaurant JSON after {MAX_REPAIR_ATTEMPTS} repair attempts. "
         f"Last validation error: {last_error}"
     )
+
+
+def next_item_id(data):
+    """Next free itemId. Based on the highest existing id, not len(data), so a
+    delete followed by an add can never reuse an id that reviews point to."""
+    ids = [r.get("itemId") for r in data if isinstance(r.get("itemId"), int)]
+    return max(ids, default=1000000 + len(data)) + 1
 
 
 def coerce_to_field_type(existing_value, new_value):
@@ -257,6 +264,28 @@ def coerce_to_field_type(existing_value, new_value):
     if isinstance(existing_value, list):
         return [part.strip() for part in new_value.split(",") if part.strip()]
     return new_value
+
+
+def sync_vector_index(file_path, upsert=None, delete_item_id=None):
+    """Keep the ChromaDB `restaurants` collection in step with the JSON file.
+
+    Only the real database is indexed (tests use a temp file), and an indexing
+    failure never loses the JSON edit — it just asks for a manual rebuild."""
+    if os.path.abspath(file_path) != os.path.abspath(FILEPATH):
+        return
+    try:
+        from build_index import get_client, get_collection, restaurant_chunks, sync_collection, embed_text_chunks
+        from config import RESTAURANTS_COLLECTION
+
+        collection = get_collection(get_client(), RESTAURANTS_COLLECTION)
+        if upsert is not None:
+            sync_collection(collection, restaurant_chunks([upsert]), embed_text_chunks, delete_stale=False)
+        if delete_item_id is not None:
+            collection.delete(ids=[f"rest-{delete_item_id}"])
+        print("Vector index updated.")
+    except Exception as exc:
+        print(f"Warning: vector index not updated ({type(exc).__name__}: {exc}). "
+              "Run `python src/build_index.py` to resync.")
 
 
 def manage_restaurants(file_path, backup_path):
@@ -303,7 +332,7 @@ def manage_restaurants(file_path, backup_path):
                 continue
 
             if choice == '3':
-                itemId = 1000000 + len(data) + 1
+                itemId = next_item_id(data)
                 paragraph = input("Enter the new restaurant description: ")
                 if not paragraph.strip():
                     print("No description provided. Operation cancelled.")
@@ -317,6 +346,7 @@ def manage_restaurants(file_path, backup_path):
                 data.append(new_record)
                 save_data(data, file_path, backup_path)
                 print("Restaurant added.")
+                sync_vector_index(file_path, upsert=new_record)
 
             elif choice == '4':
                 try:
@@ -336,6 +366,7 @@ def manage_restaurants(file_path, backup_path):
                                 print(f"  Skipped '{key}': '{new_val}' is not a valid {type(record[key]).__name__}.")
                     save_data(data, file_path, backup_path)
                     print("Record updated.")
+                    sync_vector_index(file_path, upsert=record)
                 else:
                     print("invalid index.")
 
@@ -347,9 +378,10 @@ def manage_restaurants(file_path, backup_path):
                     continue
 
                 if 0 <= index < len(data):
-                    data.pop(index)
+                    removed = data.pop(index)
                     save_data(data, file_path, backup_path)
                     print("Record deleted.")
+                    sync_vector_index(file_path, delete_item_id=removed.get("itemId"))
                 else:
                     print("invalid index.")
 
@@ -459,6 +491,12 @@ class TestRestaurantDatabase(unittest.TestCase):
         with self.assertRaises(ValueError):
             new_data_entry_process("some description", 1234)
         self.assertEqual(mock_llm.call_count, MAX_REPAIR_ATTEMPTS + 1)
+
+    def test_next_item_id_survives_delete(self):
+        """After a delete, a new record must not reuse an existing itemId."""
+        data = [{"itemId": 1000001}, {"itemId": 1000003}]
+        self.assertEqual(next_item_id(data), 1000004)
+        self.assertEqual(next_item_id([]), 1000001)
 
     def test_coerce_preserves_field_types(self):
         self.assertEqual(coerce_to_field_type(4.5, "4.8"), 4.8)

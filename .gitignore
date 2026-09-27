@@ -10,3 +10,9 @@ venv/
 # Local artifacts
 *.bak
 structured_restaurant_data_unit_test.json*
+
+# Vector index (rebuild with: python src/build_index.py)
+data/chroma/
+eval_run.log
+
+.playwright-mcp
